@@ -76,3 +76,34 @@ Confluence 5개 페이지 일괄 ingest:
   - features/play-management.md — 종료 후 "풀이결과 보러가기" 진입점 보강
   - index.md — Sources/Features/Decisions에 신규 항목 추가
 - 미해결 이슈: 학습 모드 결과의 종합 위치, "전체 평균" 단위, 우승자 화면 본 명세 누락, 카테고리=주제 태그 정합성
+
+## [2026-04-24] ingest | weekly-meetings-2026-03-29-to-2025-02-02
+
+- raw에 고정한 주간 회의록 10건을 source 페이지로 ingest
+- 신규 페이지 11개:
+  - sources/2026-03-29-weekly-meeting.md
+  - sources/2026-03-22-weekly-meeting.md
+  - sources/2026-02-22-weekly-meeting.md
+  - sources/2026-01-25-weekly-meeting.md
+  - sources/2026-01-11-weekly-meeting.md
+  - sources/2026-01-03-weekly-meeting.md
+  - sources/2025-03-01-weekly-meeting.md
+  - sources/2025-02-16-weekly-meeting.md
+  - sources/2025-02-09-weekly-meeting.md
+  - sources/2025-02-02-weekly-meeting.md
+  - decisions/early-product-direction.md
+- 기존 페이지 갱신:
+  - features/category-management.md — 초기 카테고리 기획 맥락 + 2026년 반영 일정 메모 추가
+  - features/problem-set-creation.md — 편집 UX 후속 이슈 추가
+  - features/problem-set-lifecycle.md — 삭제/학습모드/복습 운영 메모 추가
+  - features/play-management.md — 중간 참여/종료 팝업/사이드바 규칙 메모 추가
+  - features/play-player.md — 중간 참여/복습 불편 메모 추가
+  - features/winner-selection.md — 워딩/종료 팝업 후속 메모 추가
+  - features/result-dashboard.md — 닉네임 노출/평균 지표 후속 메모 추가
+  - features/auth-and-account.md — 로그아웃/약관/온보딩 후속 메모 추가
+  - decisions/visibility-states.md — 비공개 문제셋 접근 이슈 반영
+  - glossary/core-terms.md — 문제 신뢰성/개인 워크스페이스/온보딩 용어 추가
+  - index.md — Sources/Decisions 카탈로그 갱신
+- 미해결 이슈:
+  - 온보딩은 방향만 있고 별도 상세 명세 페이지 없음
+  - 팀 탈퇴/팀 삭제/개인 워크스페이스는 회의에서 반복 언급되지만 독립 명세 페이지가 아직 없음

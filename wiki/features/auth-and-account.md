@@ -2,7 +2,7 @@
 title: 로그인 / 회원가입 / 마이페이지
 type: feature
 status: draft
-sources: [raw/2025-10-24-spec-auth-mypage.md]
+sources: [raw/2025-10-24-spec-auth-mypage.md, raw/2026-01-03-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -66,6 +66,12 @@ mait 사용자 진입과 계정 관리 영역. 정책 디테일은 [decisions/ac
 
 수정 완료 시 성공/실패 메시지 + 변경 반영.
 
+## 주간 회의에서 나온 후속 메모
+
+- 로그아웃 기능은 2026-01-03과 2026-01-25 회의에서 계속 점검 대상이었고, 이후 버튼을 드랍다운 안으로 옮기는 후속 작업과 연결된다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md), [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)
+- 2026-03-29 회의에서는 약관 동의 체크박스 해제 이슈와 로그인 이후 콘솔 무한 로딩이 운영 버그로 다시 언급됐다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
+- 같은 회의에서 회원가입 이후 온보딩은 메인 화면 가이드와 상세 기능 튜토리얼을 분리하는 방향으로 논의됐지만, 노출 대상과 횟수 기준은 아직 정해지지 않았다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
+
 ## 관련
 
 - [decisions/account-policies.md](../decisions/account-policies.md) — 비밀번호/닉네임/전화번호 정책 한 페이지로 정리
@@ -76,6 +82,7 @@ mait 사용자 진입과 계정 관리 영역. 정책 디테일은 [decisions/ac
 - 금지어 리스트 출처/관리 주체
 - 소셜과 로컬의 동일 이메일 계정 merge 정책
 - 프로필 사진 등 추가 항목
+- 온보딩 노출 기준 (누구에게 몇 번 보여줄지)
 
 ## 출처
 

@@ -2,7 +2,7 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md]
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -77,6 +77,12 @@ updated: 2026-04-24
 - 상단 번호에 정답/오답 표시 (디자인 todo).
 - **다시 풀기 불가**. 단순 확인만 — 내 답안, 실제 정답, 풀이.
 - (탈락해서) 안 푼 문제는 오답 처리되며 정답·풀이 노출.
+
+## 주간 회의에서 나온 후속 메모
+
+- 2026-03-22 회의에서는 대시보드에 닉네임만 노출하는 방향이 별도 후속 작업으로 정리됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
+- 2026-02-22 회의에서는 평균 지표 노출 문의가 운영 이슈로 다시 올라와, 카드/통계의 해석 기준을 명확히 해야 함이 드러났다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
+- 2026-01-25 회의에서도 풀이 결과 대시보드는 코테이토 사용 준비를 위한 별도 점검 항목으로 남아 있었다. [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)
 
 ## 관련
 

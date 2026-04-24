@@ -2,7 +2,7 @@
 title: 문제셋 공개 범위 정책 (전체/그룹/비공개)
 type: decision
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md]
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md, raw/2026-01-11-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -44,6 +44,10 @@ updated: 2026-04-24
 
 - **선착순 모드 종료**: 우승자 공개 옵션 → 공개범위 설정 모달 (기존 셋 설정으로 default 체크) → 확인 → 복습 화면.
 - **학습 모드 종료**: 마지막 문제 → 종료하기 → 공개범위 설정(전체/그룹/비공개) → 확인 → 복습 화면.
+
+## 운영 중 확인된 이슈
+
+- 2026-01-11 주간 회의에서는 `비공개 문제 셋의 풀이가 가능한 이슈`가 실제 운영 문제로 언급됐다. 정책 문서와 구현 상태가 어긋났을 가능성이 있어, 비공개 상태의 진입/풀이 가능 여부를 재검증해야 한다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md)
 
 ## 미해결
 

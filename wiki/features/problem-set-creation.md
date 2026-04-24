@@ -2,7 +2,7 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md]
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -36,6 +36,12 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 | 2.8 질문 만들기 | - | AI 생성 → AI 결과 / 직접 제작 → 빈 템플릿. 3단계로 이동 |
 
 > 2.2가 "카테고리"와 "주제" 두 개 모두 2.2 번호를 쓰고 있어 명세 정합성 확인 필요.
+
+## 주간 회의에서 나온 후속 UX 메모
+
+- 2026-02-22 회의에서는 생성 직후 다이렉트 URL, 제목 수정, 미리보기 전환, 객관식/순서형 수정 버튼 비활성 조건, 주관식 인정답안 처리처럼 편집 UX 전반을 다시 손봐야 한다는 공감대가 생겼다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
+- 같은 회의에서 카테고리 기획은 구현 검토를 마치고 디자인 단계로 넘길 수 있는 수준까지 정리됐다고 보고됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
+- 2026-01-11 회의에서는 보충설명 placeholder, 문제 수정 페이지의 문제셋 제목 노출, 팀 선택 창/사이드바 스크롤처럼 편집 맥락 유지와 탐색성 관련 보완 요구가 별도로 쌓여 있었다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md)
 
 ### 3단계 — 질문 편집 → 생성하기
 
@@ -77,3 +83,5 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 ## 출처
 
 - [sources/2026-04-14-spec-problem-management.md](../sources/2026-04-14-spec-problem-management.md)
+- [sources/2026-02-22-weekly-meeting.md](../sources/2026-02-22-weekly-meeting.md)
+- [sources/2026-01-11-weekly-meeting.md](../sources/2026-01-11-weekly-meeting.md)

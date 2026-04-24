@@ -2,7 +2,7 @@
 title: 카테고리 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md]
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -11,6 +11,12 @@ updated: 2026-04-24
 팀 단위 카테고리 CRUD. 문제 정보 입력 단계의 카테고리 드롭다운과 연동.
 
 (2/19 명세 추가)
+
+## 주간 회의에서 드러난 맥락
+
+- 초기 기획 단계에서는 카테고리를 문제셋 구조의 핵심 분류축으로 먼저 정의하려는 논의가 있었다. `문제를 어떤 단위로 모으고 분류할지`가 기능 상세보다 앞서는 주제였다. [2025-02-02 주간 회의록](../sources/2025-02-02-weekly-meeting.md), [2025-02-09 주간 회의록](../sources/2025-02-09-weekly-meeting.md)
+- 2026-02-22 시점에는 카테고리 기획이 구현 검토를 마치고 디자인 단계로 넘어갈 정도로 성숙했다고 보고됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
+- 2026-03-29에서는 카테고리를 4월 말~5월 초 반영 후보로 보고, 명세 확정 여부를 먼저 점검하기로 했다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 
 ## 1.1 카테고리 추가
 
@@ -45,3 +51,7 @@ updated: 2026-04-24
 ## 출처
 
 - [sources/2026-04-14-spec-team-member-and-category.md](../sources/2026-04-14-spec-team-member-and-category.md) (2. 카테고리 관리)
+- [sources/2025-02-02-weekly-meeting.md](../sources/2025-02-02-weekly-meeting.md)
+- [sources/2025-02-09-weekly-meeting.md](../sources/2025-02-09-weekly-meeting.md)
+- [sources/2026-02-22-weekly-meeting.md](../sources/2026-02-22-weekly-meeting.md)
+- [sources/2026-03-29-weekly-meeting.md](../sources/2026-03-29-weekly-meeting.md)

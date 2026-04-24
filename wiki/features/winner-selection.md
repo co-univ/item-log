@@ -2,7 +2,7 @@
 title: 진출자 선정 (선착순 모드)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md]
+sources: [raw/2026-04-11-spec-play-management.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md]
 updated: 2026-04-24
 ---
 
@@ -30,6 +30,11 @@ updated: 2026-04-24
 `진출자 확정하기` → 모달 ("0000 진출자로 확정하시겠습니까?")
 - **확인** → 풀이관리 페이지(1.1)로 복귀.
 - **취소** → 진출자 선정 페이지(1.5)에 머무름.
+
+## 주간 회의에서 나온 후속 메모
+
+- 2026-03-22 회의에서는 진출자/우승자 워딩 자체를 더 명확히 바꿔야 한다는 요구가 있었다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
+- 같은 회의와 2026-02-22 회의에서는 우승자 선정 팝업 및 종료하기 연계 흐름이 실제 운영에서 불안정하다는 회고가 남았다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md), [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 
 ## 관련
 
