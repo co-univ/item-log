@@ -2,8 +2,8 @@
 title: 풀이관리 (maker 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 풀이관리
@@ -90,6 +90,13 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 
 ## 주간 회의에서 나온 후속 메모
 
+- 2025-10-01 회의부터 풀이관리는 학습 모드를 포함해 따로 정리해야 할 핵심 기능으로 올라와 있었다. [2025-10-01 주간 회의록](../sources/2025-10-01-weekly-meeting.md)
+- 2025-10-12 회의에서는 질문 영역을 접기보다 줄이는 방향, 종료 버튼 위치, 실시간 풀이 중 문제 내용 변경의 어색함이 함께 논의돼 운영 화면의 기본 감각을 조정하고 있었다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
+- 2025-10-16 회의에서는 우승자 없는 종료 체크박스와 문제영역 정답 수정 방식을 포함해 종료/운영 예외 케이스를 상세하게 다듬었다. [2025-10-16 주간 회의록](../sources/2025-10-16-weekly-meeting.md)
+- 2025-10-30 회의에서는 시험 기간을 앞두고 `복습 / 학습 / AI` 중심으로 범위를 압축하면서 풀이관리 보완을 이어가기로 했다. [2025-10-30 주간 회의록](../sources/2025-10-30-weekly-meeting.md)
+- 2025-11-02 회의에서는 진출자 관리에서 `전체`보다 현재 플레이 가능한 사용자와 다음 단계 진출자를 구분해야 한다는 메모가 남았다. [2025-11-02 주간 회의록](../sources/2025-11-02-weekly-meeting.md)
+- 2025-11-07과 2025-11-12 회의에서는 풀이관리와 풀이관리 API 수정이 출시 직전 후속 작업으로 반복 언급됐다. [2025-11-07 주간 회의록](../sources/2025-11-07-weekly-meeting.md), [2025-11-12 주간 회의록](../sources/2025-11-12-weekly-meeting.md)
+- 2025-11-09 회의에서는 진출자/우승자 영역의 순서와 시각적 강조를 더 다듬는 수정 요청이 이어졌다. [2025-11-09 주간 회의록](../sources/2025-11-09-weekly-meeting.md)
 - 2026-03-29 회의에서는 실시간 중간 참여자를 `풀 수 없는 상태`로 분명히 안내하고, 닉네임 기준 식별과 알림 토픽 연동이 필요하다고 정리했다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-03-22 회의에서는 우승자 선정 팝업과 종료하기 흐름이 실제 운영에서 안정적으로 동작하는지 다시 검증해야 한다는 회고가 남았다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 같은 회의에서 사이드바 자동 접힘 기준은 단순 반응형 이슈가 아니라, 어떤 상황에서 조작을 숨길지에 대한 규칙 정의 문제로 다뤄졌다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)

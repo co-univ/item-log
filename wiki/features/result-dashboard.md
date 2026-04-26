@@ -2,8 +2,8 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 풀이결과 대시보드
@@ -80,6 +80,12 @@ updated: 2026-04-24
 
 ## 주간 회의에서 나온 후속 메모
 
+- 2025-10-30 회의에서는 `풀이 결과`가 별도 미완료 기획 항목으로 남아 있었다. [2025-10-30 주간 회의록](../sources/2025-10-30-weekly-meeting.md)
+- 2025-11-02 회의에서는 랭킹, 오답률, 참여자 수, 문항별 선택률이 통계 후보로 한 번에 정리되며 별도 대시보드 기획 축이 분명해졌다. [2025-11-02 주간 회의록](../sources/2025-11-02-weekly-meeting.md)
+- 2025-11-12 회의에서는 대시보드 명세서 업데이트가 구현 후속 과제로 따로 남았다. [2025-11-12 주간 회의록](../sources/2025-11-12-weekly-meeting.md)
+- 2025-11-16 회의에서도 대시보드는 다른 핵심 릴리스 항목들과 함께 남은 범위로 재정렬됐다. [2025-11-16 주간 회의록](../sources/2025-11-16-weekly-meeting.md)
+- 2025-12-02 회의에서는 리뷰/복습 화면 작업이 진행되면서 결과 확인 경험도 함께 다듬어지고 있었다. [2025-12-02 주간 회의록](../sources/2025-12-02-weekly-meeting.md)
+- 2025-12-23~31 회의에서는 복습에서 어떤 답이 맞고 틀렸는지, 해설을 언제 노출할지 같은 세부 결과 노출 정책이 후속 과제로 남았다. [2025-12-23 ~ 2025-12-31 주간 회의록](../sources/2025-12-23-weekly-meeting.md)
 - 2026-03-22 회의에서는 대시보드에 닉네임만 노출하는 방향이 별도 후속 작업으로 정리됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-02-22 회의에서는 평균 지표 노출 문의가 운영 이슈로 다시 올라와, 카드/통계의 해석 기준을 명확히 해야 함이 드러났다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-01-25 회의에서도 풀이 결과 대시보드는 코테이토 사용 준비를 위한 별도 점검 항목으로 남아 있었다. [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)

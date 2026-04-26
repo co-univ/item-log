@@ -2,8 +2,8 @@
 title: 문제 셋 라이프사이클
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 문제 셋 라이프사이클
@@ -70,6 +70,11 @@ updated: 2026-04-24
 
 ## 주간 회의에서 나온 운영 메모
 
+- 2025-10-01 회의부터 학습 모드는 풀이관리의 확장 범위로 별도 작업이 필요하다고 보고 있었다. [2025-10-01 주간 회의록](../sources/2025-10-01-weekly-meeting.md)
+- 2025-10-30 회의에서는 제품 범위를 `복습 / 학습 / AI`로 다시 묶으며 라이프사이클 핵심 상태를 재정렬했다. [2025-10-30 주간 회의록](../sources/2025-10-30-weekly-meeting.md)
+- 2025-11-07 회의에서는 학습/복습 준비가 출시 직전 블로커 항목으로 따로 올라와 있었다. [2025-11-07 주간 회의록](../sources/2025-11-07-weekly-meeting.md)
+- 2025-12-02와 2025-12-10 회의에서는 `제거된 유저 제출 차단`이 반복 언급돼, 팀 멤버십 변화가 진행 중 세션에 어떻게 반영돼야 하는지가 라이프사이클 문제로 드러났다. [2025-12-02 주간 회의록](../sources/2025-12-02-weekly-meeting.md), [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
+- 2025-12-23~31 회의에서는 복습 모드의 정오답/해설 노출 정책이 별도 후속 작업으로 남아 있었다. [2025-12-23 ~ 2025-12-31 주간 회의록](../sources/2025-12-23-weekly-meeting.md)
 - 2026-03-29 회의에서는 문제셋 삭제를 `풀이 전 / 진행 중 / 완료 후` 상태마다 다르게 봐야 한다는 의견이 정리됐다. 실시간 모드 삭제는 대시보드 통계와 플레이어 경험까지 함께 고려해야 한다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-03-29 회의에서는 학습모드를 실시간모드의 단순 변형이 아니라 개인 학습과 팀 스터디를 함께 담는 더 넓은 흐름으로 봐야 한다는 의견도 나왔다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-01-11과 2026-01-03 회의에서는 비공개 문제셋 접근, 복습 해설, 완료된 문제셋 재확인성, 재채점처럼 상태 전환 이후 규칙이 사용자 경험에 직접 영향을 주는 이슈가 지속적으로 보고됐다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md), [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)

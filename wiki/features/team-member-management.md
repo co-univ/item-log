@@ -2,8 +2,8 @@
 title: 팀 멤버 권한 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 팀 멤버 권한 관리
@@ -46,6 +46,16 @@ updated: 2026-04-24
 
 - [features/team-invitation.md](./team-invitation.md) — 멤버 추가 흐름
 - [decisions/permission-roles.md](../decisions/permission-roles.md) — owner/maker/player 권한 정의
+
+## 주간 회의에서 나온 후속 메모
+
+- 2025-10-23 회의부터 팀관리 기획이 별도 과제로 올라와 있었다. [2025-10-23 주간 회의록](../sources/2025-10-23-weekly-meeting.md)
+- 2025-10-26 회의에서는 팀관리 초안 안에 계정 제거와 maker/player 권한 변경, 승인/거절 흐름까지 넓은 범위가 이미 포함돼 있었다. [2025-10-26 주간 회의록](../sources/2025-10-26-weekly-meeting.md)
+- 2025-10-30 회의에서는 팀관리 기획이 완료 처리되며 제품 범위 안으로 편입됐다. [2025-10-30 주간 회의록](../sources/2025-10-30-weekly-meeting.md)
+- 2025-11-02 회의에서는 완성본 공유와 함께 검색 가능 조건, 승인 흐름, 만료 시간처럼 실제 운영 조건이 다시 점검됐다. [2025-11-02 주간 회의록](../sources/2025-11-02-weekly-meeting.md)
+- 2025-12-02 회의에서는 `팀 관리에서 팀원 권한 이동`이 실제 작업 항목으로 처리됐다. [2025-12-02 주간 회의록](../sources/2025-12-02-weekly-meeting.md)
+- 2025-12-07 회의에서도 팀 역할 이동 문의 문서가 다시 연결돼, 명세와 운영 질문을 함께 관리해야 하는 영역임이 드러났다. [2025-12-07 주간 회의록](../sources/2025-12-07-weekly-meeting.md)
+- 2025-12-10 회의에서도 팀원 권한 이동 관련 문의 문서가 다시 연결돼, 명세/문의 정합성이 계속 중요했다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
 
 ## 미해결
 

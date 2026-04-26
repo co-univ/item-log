@@ -2,8 +2,8 @@
 title: 팀 사용자 초대
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 팀 사용자 초대
@@ -75,6 +75,16 @@ updated: 2026-04-24
 
 - [features/team-member-management.md](./team-member-management.md) — 초대 후 권한 관리
 - [decisions/permission-roles.md](../decisions/permission-roles.md) — maker는 승인, player는 자동 승인의 근거
+
+## 주간 회의에서 나온 후속 메모
+
+- 2025-10-01 회의의 `링크 생성` 메모는 초대 링크/참여 흐름의 초기 기반 작업으로 읽힌다. [2025-10-01 주간 회의록](../sources/2025-10-01-weekly-meeting.md)
+- 2025-10-16 회의에서는 팀 초대 링크 서비스와 컨트롤러 테스트 코드가 실제 구현 항목으로 공유됐다. [2025-10-16 주간 회의록](../sources/2025-10-16-weekly-meeting.md)
+- 2025-10-26 회의의 팀관리 초안은 초대 링크 생성/관리와 승인/거절 흐름을 한 화면 축으로 정리하려는 시도였다. [2025-10-26 주간 회의록](../sources/2025-10-26-weekly-meeting.md)
+- 2025-11-02 회의에서는 초대 이후 어떤 화면으로 진입하는지, 검색 가능 조건과 만료 시간이 어떻게 작동하는지 같은 실제 운영 조건을 구체화했다. [2025-11-02 주간 회의록](../sources/2025-11-02-weekly-meeting.md)
+- 2025-11-07 회의에서는 `팀 초대 승락`이 출시 직전 블로커로 남아 있었다. [2025-11-07 주간 회의록](../sources/2025-11-07-weekly-meeting.md)
+- 2025-11-09 회의에서는 이메일 초대 승락, 삭제 흐름, 초대 진입 화면이 추가되며 사용자 동선이 더 촘촘해졌다. [2025-11-09 주간 회의록](../sources/2025-11-09-weekly-meeting.md)
+- 2025-11-12 회의에서는 초대 승락이 `초대 세부사항 전달`까지 포함한 온보딩 문제로 확장됐다. [2025-11-12 주간 회의록](../sources/2025-11-12-weekly-meeting.md)
 
 ## 미해결
 

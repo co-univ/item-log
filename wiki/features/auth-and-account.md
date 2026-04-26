@@ -2,8 +2,8 @@
 title: 로그인 / 회원가입 / 마이페이지
 type: feature
 status: draft
-sources: [raw/2025-10-24-spec-auth-mypage.md, raw/2026-01-03-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2025-10-24-spec-auth-mypage.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-23-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 로그인 / 회원가입 / 마이페이지
@@ -68,6 +68,11 @@ mait 사용자 진입과 계정 관리 영역. 정책 디테일은 [decisions/ac
 
 ## 주간 회의에서 나온 후속 메모
 
+- 2025-10-16 회의에서는 로그인 페이지 디자인, 소셜 로그인 준비, 회원가입 모달 의도 확인, 약관 전문 정리가 한 묶음으로 움직였다. [2025-10-16 주간 회의록](../sources/2025-10-16-weekly-meeting.md)
+- 2025-10-19 회의에서는 로그인/회원가입 진입 방식 자체를 다시 보며, 최초 진입 후 어떤 화면으로 자연스럽게 이어질지 고민하고 있었다. [2025-10-19 주간 회의록](../sources/2025-10-19-weekly-meeting.md)
+- 2025-10-23 회의에서는 소셜 로그인이 실제 구현 트랙으로 올라왔고, 팀관리/검색 논의와 함께 계정 진입 흐름을 묶어 보기 시작했다. [2025-10-23 주간 회의록](../sources/2025-10-23-weekly-meeting.md)
+- 2025-10-30 회의에서는 로그인하지 않은 상태에서 서비스 이용을 시도하면 로그인 페이지로 보내는 흐름과 마이페이지/닉네임 변경 작업이 동시에 언급됐다. [2025-10-30 주간 회의록](../sources/2025-10-30-weekly-meeting.md)
+- 2025-11-23 회의에서는 로그아웃과 리프레시 플로우가 대외 사용 직전 완성도를 좌우하는 운영 이슈로 다시 올라왔다. [2025-11-23 주간 회의록](../sources/2025-11-23-weekly-meeting.md)
 - 로그아웃 기능은 2026-01-03과 2026-01-25 회의에서 계속 점검 대상이었고, 이후 버튼을 드랍다운 안으로 옮기는 후속 작업과 연결된다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md), [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)
 - 2026-03-29 회의에서는 약관 동의 체크박스 해제 이슈와 로그인 이후 콘솔 무한 로딩이 운영 버그로 다시 언급됐다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 같은 회의에서 회원가입 이후 온보딩은 메인 화면 가이드와 상세 기능 튜토리얼을 분리하는 방향으로 논의됐지만, 노출 대상과 횟수 기준은 아직 정해지지 않았다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)

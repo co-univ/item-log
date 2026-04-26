@@ -2,8 +2,8 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 문제 풀기 (player 측)
@@ -114,6 +114,10 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 ## 주간 회의에서 나온 후속 메모
 
+- 2025-12-02 회의에서는 `리뷰 = 복습` 화면 작업이 프론트 후속 과제로 분명히 남아 있었다. [2025-12-02 주간 회의록](../sources/2025-12-02-weekly-meeting.md)
+- 2025-12-07 회의에서는 복습/학습 모드와 완료 답 수정 문의가 별도 문서로 다시 연결돼, 플레이어 경험이 아직 문의 대응과 함께 정리되고 있었음을 보여준다. [2025-12-07 주간 회의록](../sources/2025-12-07-weekly-meeting.md)
+- 2025-12-10 회의에서는 복습모드 기획이 정리됐고, 이후 명세서로 정리해 공유하기로 했다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
+- 2025-12-23~31 회의에서는 복습에서 어떤 답이 맞고 틀렸는지, 정오답/해설을 언제 숨길지 같은 세부 노출 정책이 후속 작업으로 남았다. [2025-12-23 ~ 2025-12-31 주간 회의록](../sources/2025-12-23-weekly-meeting.md)
 - 2026-03-29 회의에서는 실시간 중간 참여 player에게 `문제를 풀 수 없는 상태`를 명확히 안내해야 한다는 운영 요구가 정리됐다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-03-22 회의에서는 진출자/우승자 워딩, 중간 참여 처리, 반응형, 이름 길이 처리 같은 플레이어 화면 표현 문제가 함께 논의됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-01-03 회의에서는 복습에서 맞고 틀림을 알기 어렵고 완료된 문제셋 확인이 불편하다는 운영 피드백이 다시 확인됐다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)

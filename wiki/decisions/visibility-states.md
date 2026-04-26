@@ -2,8 +2,8 @@
 title: 문제셋 공개 범위 정책 (전체/그룹/비공개)
 type: decision
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md, raw/2026-01-11-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md, raw/2026-01-11-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 문제셋 공개 범위 정책
@@ -39,6 +39,12 @@ updated: 2026-04-24
 3. 따라서 검색은 복습 + 전체공개만.
 
 > ⚠ **충돌 점검**: 4/14 [문제관리_문제생성 명세](../sources/2026-04-14-spec-problem-management.md) §3.12에는 여전히 "생성하기 모달에서 공개대상(그룹공개 default) 선택" 흐름이 남아있음. 12/10 결정이 명세에 반영되지 않았는지 / 4/14 명세가 우선인지 확인 필요. → [features/problem-set-creation.md](../features/problem-set-creation.md) "생성하기" 섹션 참고.
+
+## 초기 논의 흔적
+
+- 2025-10-12 회의에서는 검색에 어떤 공개 범위 조합을 허용할지 기준이 아직 흐릿하다는 메모가 남아 있었다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
+- 2025-10-19 회의에서는 `전체공개 && 복습모드`를 검색 노출의 구체 조건으로 다시 확인했다. [2025-10-19 주간 회의록](../sources/2025-10-19-weekly-meeting.md)
+- 2025-10-23 회의에서도 검색 대상을 `전체 공개 && 복습모드`와 묶어 보는 논의가 이미 존재했다. 12/10 결정은 갑자기 나온 규칙이 아니라, 10월부터 이어진 방향의 정리로 볼 수 있다. [2025-10-23 주간 회의록](../sources/2025-10-23-weekly-meeting.md)
 
 ## 종료하기 → 복습 전환 시 공개 범위 모달
 

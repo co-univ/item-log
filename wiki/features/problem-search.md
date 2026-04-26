@@ -2,8 +2,8 @@
 title: 문제 검색
 type: feature
 status: draft
-sources: [raw/2025-12-17-spec-problem-search.md, raw/2026-04-11-spec-player-view-play.md]
-updated: 2026-04-24
+sources: [raw/2025-12-17-spec-problem-search.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-11-spec-player-view-play.md]
+updated: 2026-04-25
 ---
 
 # 문제 검색
@@ -55,6 +55,17 @@ updated: 2026-04-24
 - [decisions/visibility-states.md](../decisions/visibility-states.md) — 검색 노출 조건의 근거
 - [features/problem-set-lifecycle.md](../features/problem-set-lifecycle.md) — 복습 상태가 검색 가능한 유일한 상태
 - [glossary/core-terms.md](../glossary/core-terms.md) — 북마크, 컬렉션, 개인 학습 공간
+
+## 주간 회의에서 나온 후속 메모
+
+- 2025-10-16 회의에서는 검색 결과에 잡히는 문제셋의 제약조건을 더 구체화해야 한다는 메모가 남았다. [2025-10-16 주간 회의록](../sources/2025-10-16-weekly-meeting.md)
+- 2025-10-12 회의에서는 자기 그룹/전체 공개/복습 상태를 어떤 조합으로 검색에 반영할지 기준이 아직 흐릿하다는 메모가 남았다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
+- 2025-10-19 회의에서는 `전체공개 && 복습모드`를 검색 노출의 구체 조건으로 다시 정리했고, 자기 그룹과 타 그룹의 노출 차이를 의식하기 시작했다. [2025-10-19 주간 회의록](../sources/2025-10-19-weekly-meeting.md)
+- 2025-10-23 회의에서는 `전체 공개 && 복습모드`를 검색 논의의 전제로 다루고 있었다. [2025-10-23 주간 회의록](../sources/2025-10-23-weekly-meeting.md)
+- 2025-11-07과 2025-11-12 회의에서는 문제셋 검색이 출시 직전 백엔드 후속 작업으로 반복 언급됐다. [2025-11-07 주간 회의록](../sources/2025-11-07-weekly-meeting.md), [2025-11-12 주간 회의록](../sources/2025-11-12-weekly-meeting.md)
+- 2025-11-16 회의에서는 검색이 다른 릴리스 항목들과 함께 남은 구현 범위로 다시 정리됐다. [2025-11-16 주간 회의록](../sources/2025-11-16-weekly-meeting.md)
+- 2025-12-07 회의에서는 검색 자체가 별도 문의 문서로 다시 연결돼, 명세와 기대 경험 사이의 간극이 남아 있었음을 보여준다. [2025-12-07 주간 회의록](../sources/2025-12-07-weekly-meeting.md)
+- 2025-12-10 회의에서는 복습모드와 검색 기획을 정리한 뒤 명세서로 정리해 공유하는 단계까지 넘어갔다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
 
 ## 미해결
 

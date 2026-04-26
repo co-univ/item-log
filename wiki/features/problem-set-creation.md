@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md]
+updated: 2026-04-25
 ---
 
 # 문제셋 생성 플로우
@@ -39,6 +39,12 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 
 ## 주간 회의에서 나온 후속 UX 메모
 
+- 2025-10-12 회의에서는 생성하기 validation fail을 어떤 문제와 필드에 먼저 연결해 보여줄지, 그리고 문제 생성 테스트 결과를 어떻게 확인할지 같은 초기 UX 논의가 남아 있었다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
+- 2025-10-16 회의에서는 `정보입력 -> 문제 편집 -> 생성하기 -> 추가 정보(표지)`까지 생성 플로우를 더 길게 보는 안이 올라왔다. [2025-10-16 주간 회의록](../sources/2025-10-16-weekly-meeting.md)
+- 2025-10-19 회의에서는 문제 생성 화면의 뒤로가기 동선과 AI 추천 버튼 위치까지 같이 보며, 편집 중 맥락 유지가 중요한 이슈로 올라왔다. [2025-10-19 주간 회의록](../sources/2025-10-19-weekly-meeting.md)
+- 2025-10-23과 2025-11-12 회의에서는 AI 문제 생성이 별도 API/연동 과제로 반복 언급됐다. [2025-10-23 주간 회의록](../sources/2025-10-23-weekly-meeting.md), [2025-11-12 주간 회의록](../sources/2025-11-12-weekly-meeting.md)
+- 2025-11-09 회의에서는 문제 생성 개수 선택의 최소 조건과 임시저장 UX가 보다 구체적인 동작 규칙으로 정리됐다. [2025-11-09 주간 회의록](../sources/2025-11-09-weekly-meeting.md)
+- 2025-12-10 회의에서는 복습모드와 함께 `문제정보 입력 및 생성하기 플로우 변경`이 완료 처리됐다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
 - 2026-02-22 회의에서는 생성 직후 다이렉트 URL, 제목 수정, 미리보기 전환, 객관식/순서형 수정 버튼 비활성 조건, 주관식 인정답안 처리처럼 편집 UX 전반을 다시 손봐야 한다는 공감대가 생겼다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 같은 회의에서 카테고리 기획은 구현 검토를 마치고 디자인 단계로 넘길 수 있는 수준까지 정리됐다고 보고됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-01-11 회의에서는 보충설명 placeholder, 문제 수정 페이지의 문제셋 제목 노출, 팀 선택 창/사이드바 스크롤처럼 편집 맥락 유지와 탐색성 관련 보완 요구가 별도로 쌓여 있었다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md)
@@ -66,11 +72,13 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
   2. 원인 필드에 빨간색 `*`, 3.1 영역의 문제 번호에 레드닷.
   3. 수정되면 표시 제거. 모두 OK면 페이지 이동.
 - 디자인 노트: 3.1 레드닷이 질문 삭제(minus) 아이콘과 헷갈리지 않게 구별 필요.
+- 2025-10-12 회의 메모는 이 validation fail 정책이 이미 10월 중순부터 구체 UX 이슈였음을 보여준다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
 
 ## 관련 결정·정책
 
 - 저장 정책: [decisions/auto-save-behavior.md](../decisions/auto-save-behavior.md)
 - 공개 범위: [decisions/visibility-states.md](../decisions/visibility-states.md)
+- AI 생성: [features/ai-question-generation.md](./ai-question-generation.md)
 - 용어: [glossary/core-terms.md](../glossary/core-terms.md)
 
 ## 미해결 이슈
