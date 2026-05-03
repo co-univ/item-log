@@ -2,8 +2,8 @@
 title: 문제 셋 라이프사이클
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
+updated: 2026-05-03
 ---
 
 # 문제 셋 라이프사이클
@@ -68,6 +68,11 @@ updated: 2026-04-25
 - 삭제: 휴지통 클릭 → '문제 셋을 삭제하시겠습니까?' 모달 → 확인/취소
 - 문제 수정 클릭 → 질문 편집기로 이동
 
+## 삭제 / 배포 후속
+
+- 2026-04-19 회의에서는 팀 삭제 시 팀이 만든 문제셋과 문제까지 완전 삭제하는 방향으로 기록됐다. 이는 팀 삭제와 문제셋 라이프사이클이 함께 처리되어야 함을 뜻한다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
+- 2026-04-26 회의에서는 문제셋 삭제가 배포 항목으로 올라왔지만, 관련 데이터가 실제로 안 보이는지 확인해야 한다는 후속이 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+
 ## 주간 회의에서 나온 운영 메모
 
 - 2025-10-01 회의부터 학습 모드는 풀이관리의 확장 범위로 별도 작업이 필요하다고 보고 있었다. [2025-10-01 주간 회의록](../sources/2025-10-01-weekly-meeting.md)
@@ -78,6 +83,7 @@ updated: 2026-04-25
 - 2026-03-29 회의에서는 문제셋 삭제를 `풀이 전 / 진행 중 / 완료 후` 상태마다 다르게 봐야 한다는 의견이 정리됐다. 실시간 모드 삭제는 대시보드 통계와 플레이어 경험까지 함께 고려해야 한다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-03-29 회의에서는 학습모드를 실시간모드의 단순 변형이 아니라 개인 학습과 팀 스터디를 함께 담는 더 넓은 흐름으로 봐야 한다는 의견도 나왔다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-01-11과 2026-01-03 회의에서는 비공개 문제셋 접근, 복습 해설, 완료된 문제셋 재확인성, 재채점처럼 상태 전환 이후 규칙이 사용자 경험에 직접 영향을 주는 이슈가 지속적으로 보고됐다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md), [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)
+- 2026-04-19과 2026-04-26 회의에서는 팀 삭제/문제셋 삭제의 데이터 처리와 학습모드 후속 작업이 배포 전후 확인 항목으로 남았다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 
 ## 디자인 todo
 
@@ -95,3 +101,5 @@ updated: 2026-04-25
 - 복습 상태에서 전체공개일 때 비-player(검색으로 진입한 사용자)의 관리 흐름
 - 진행 중 / 종료 후 문제셋 삭제 시 통계·플레이어 노출·대시보드 보존 정책
 - 학습모드가 개인 학습과 팀 스터디를 어떻게 함께 포괄하는지에 대한 상세 규칙
+- 문제셋 삭제 후 관련 데이터가 목록/검색/대시보드/API에서 남아 보이지 않는지
+- 팀 삭제가 문제셋/문제 완전 삭제를 포함할 때 통계와 감사 로그를 어떻게 처리할지

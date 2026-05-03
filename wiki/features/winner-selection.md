@@ -2,8 +2,8 @@
 title: 진출자 선정 (선착순 모드)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
+updated: 2026-05-03
 ---
 
 # 진출자 선정
@@ -31,12 +31,18 @@ updated: 2026-04-24
 - **확인** → 풀이관리 페이지(1.1)로 복귀.
 - **취소** → 진출자 선정 페이지(1.5)에 머무름.
 
+## 우승자 선정 이후 플로우
+
+- 2026-04-19 회의에서 우승자 선정 화면에 `x` 버튼을 추가하기로 했고, `x` 또는 뒤로가기 시 `문제 풀기 탭 > 실시간 모드 페이지`로 이동하는 흐름이 정리됐다.
+- 2026-04-26 회의에서는 `우승자 선정 5초 종료 개선`이 프론트 후속 항목으로 남았다.
+
 ## 주간 회의에서 나온 후속 메모
 
 - 2025-11-02 회의에서는 진출자 관리에서 `전체`보다 현재 플레이 가능한 사용자와 다음 단계 진출자를 구분해야 한다는 방향이 나왔다. [2025-11-02 주간 회의록](../sources/2025-11-02-weekly-meeting.md)
 - 2025-11-09 회의에서는 진출자/우승자 영역의 순서와 시각적 강조를 더 손보는 수정 요청이 이어졌다. [2025-11-09 주간 회의록](../sources/2025-11-09-weekly-meeting.md)
 - 2026-03-22 회의에서는 진출자/우승자 워딩 자체를 더 명확히 바꿔야 한다는 요구가 있었다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 같은 회의와 2026-02-22 회의에서는 우승자 선정 팝업 및 종료하기 연계 흐름이 실제 운영에서 불안정하다는 회고가 남았다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md), [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
+- 2026-04-19과 2026-04-26 회의에서는 우승자 선정 이후 닫기/뒤로가기와 5초 종료 개선이 배포 후속으로 남았다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 
 ## 관련
 
@@ -46,3 +52,5 @@ updated: 2026-04-24
 ## 출처
 
 - [sources/2026-04-11-spec-play-management.md](../sources/2026-04-11-spec-play-management.md)
+- [sources/2026-04-19-weekly-meeting.md](../sources/2026-04-19-weekly-meeting.md)
+- [sources/2026-04-26-weekly-meeting.md](../sources/2026-04-26-weekly-meeting.md)

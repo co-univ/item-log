@@ -2,8 +2,8 @@
 title: 핵심 용어
 type: glossary
 status: stable
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md]
-updated: 2026-04-24
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
+updated: 2026-05-03
 ---
 
 # 핵심 용어
@@ -68,6 +68,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 ## 결과 / 통계
 
 - **우승자 화면** — 풀이 종료 직후 player에게 노출되는 화면. "풀이결과 보러가기" 진입점 포함. 자체 명세는 누락.
+- **등수정보** — 실시간 풀이 중 player에게 보여줄 수 있는 순위/제출 현황 계열 정보. 2026-04-19 회의에서는 실시간 참여 인원, 제출 현황, 최초 제출자와의 시간 차이 등이 후보로 논의됐다.
 - **풀이결과 대시보드** — [features/result-dashboard.md](../features/result-dashboard.md). 메인(전체 통계) + 상세(셋별 결과).
 - **우리팀 랭킹** — 메인은 실시간 모드 전체 집계, 상세는 해당 셋 집계.
 - **개인 정답률** — 푼 문제셋 개수 대비 맞은 문제 수 비율. 원그래프.
@@ -79,6 +80,14 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 ## 그룹 / 팀
 
 - **그룹/팀** — 문제셋 단위로 maker/player를 묶는 공간. 명세에서 그룹과 팀이 혼용됨 (정확한 구분 명세 누락).
+- **팀 탈퇴** — 팀 멤버가 팀에서 나가는 흐름. 2026-04-19 기준으로 접근 권한은 제거하지만 기존 풀이/생성 데이터는 유지하는 방향.
+- **팀 삭제** — 팀 자체를 삭제하는 흐름. 2026-04-19 기준으로 팀, 멤버, 초대링크, 가입 신청, 풀이 기록, 문제셋/문제까지 완전 삭제하는 방향.
+
+## 분석 / 운영
+
+- **GA4** — 제품 사용 이벤트 분석 도구. 2026-04-26 회의에서는 AI 생성 시간, 로딩 UI 이탈률, 문제셋 제목 수정 클릭 수를 후보 지표로 논의했다.
+- **뷰저블** — 사용자 행동 분석 도구로 언급됨. 온보딩/GA 분석과 함께 검토 필요.
+- **item-log** — 아이템별 논의 히스토리를 잃지 않기 위한 보조 레포/방식으로 2026-04-26 회의에서 언급됐다.
 
 ## 모드 토글 (3.7 주관식)
 

@@ -177,3 +177,41 @@ Confluence 5개 페이지 일괄 ingest:
 - 정정 메모:
   - 같은 날짜대의 `공작시 스크럼` DB 배치는 별도 기록으로 유지
   - 메인 `MAIT 회의록` 보드 누락분은 이번 ingest로 별도 보강 완료
+
+## [2026-05-03] ingest | 2026-04-19-weekly-meeting
+
+- `raw/2026-04-19-weekly-meeting.md`를 source/wiki에 반영
+- 신규 페이지:
+  - sources/2026-04-19-weekly-meeting.md
+  - features/team-exit-and-deletion.md
+- 기존 페이지 갱신:
+  - features/team-member-management.md
+  - features/problem-set-lifecycle.md
+  - features/play-player.md
+  - features/winner-selection.md
+  - features/category-management.md
+  - features/auth-and-account.md
+  - decisions/permission-roles.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 팀 탈퇴 데이터 유지, 팀 삭제 완전 삭제 방향, 등수정보 노출 방향, 우승자 선정 후 닫기/뒤로가기 플로우
+
+## [2026-05-03] ingest | 2026-04-26-weekly-meeting
+
+- Notion 페이지 `34a87d59-2b6e-8008-abe1-c0fc3b1488f2`를 `raw/2026-04-26-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-04-26-weekly-meeting.md
+  - features/product-analytics.md
+  - decisions/knowledge-base-ingest-process.md
+- 기존 페이지 갱신:
+  - features/team-exit-and-deletion.md
+  - features/problem-set-lifecycle.md
+  - features/play-management.md
+  - features/play-player.md
+  - features/category-management.md
+  - features/ai-question-generation.md
+  - features/auth-and-account.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 4/21 배포 후속, 학습모드 API/프론트 진행상황, 카테고리명 40자 제한, GA4 지표 후보, 지식 베이스 운영 원칙
+- 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 실제 회의 내용이 작성되어 있어 사용자 요청에 따라 ingest

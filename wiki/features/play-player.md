@@ -2,8 +2,8 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
+updated: 2026-05-03
 ---
 
 # 문제 풀기 (player 측)
@@ -43,6 +43,18 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 진행 중인(문제공개 ON된) 문제로 자동 이동.
 - 풀지 않은 문제는 데이터 없음 (당연).
 - (12/20) 이탈 사이에 종료된 경우에도 데이터 유지.
+
+### 실시간 등수/제출 현황 후속
+
+2026-04-19 회의에서는 등수정보를 maker 전용 관리 화면보다 player가 풀이 중 보는 화면에서 제공하는 방향으로 논의가 이동했다.
+
+- 실시간 참여 인원
+- 제출 현황
+- 최초 제출자와의 시간 차이
+- 정답자에게만 노출할 정보
+- 오답이거나 아직 풀 수 없는 사람에게는 정답 노출 제한
+
+문제 유형별 화면은 아직 추가 구상이 필요하다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
 
 ## 2. 학습 모드
 
@@ -85,6 +97,11 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
   - 취소 → 머무름.
   - 확인 → 저장된 부분만 보존, 페이지 이동.
 
+### 2.6 구현 후속
+
+- 2026-04-26 회의 기준 프론트는 학습모드 관리/풀이 탭과 풀이 화면을 완료했고, 제출 및 채점은 진행 중으로 남았다.
+- 같은 회의에서 복습 모드 동선 수정도 프론트 후속 항목으로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+
 ## 3. 복습 모드
 
 ### 3.1 문제 번호
@@ -121,6 +138,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 2026-03-29 회의에서는 실시간 중간 참여 player에게 `문제를 풀 수 없는 상태`를 명확히 안내해야 한다는 운영 요구가 정리됐다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-03-22 회의에서는 진출자/우승자 워딩, 중간 참여 처리, 반응형, 이름 길이 처리 같은 플레이어 화면 표현 문제가 함께 논의됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-01-03 회의에서는 복습에서 맞고 틀림을 알기 어렵고 완료된 문제셋 확인이 불편하다는 운영 피드백이 다시 확인됐다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)
+- 2026-04-19 회의에서는 등수정보/제출현황을 player 화면에 어떻게 노출할지 다시 논의됐고, 2026-04-26 회의에서는 학습모드와 복습모드 동선이 배포 후속으로 남았다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 
 ## 관련
 
@@ -132,6 +150,8 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 - 1.4 오답 재제출 시 정답자·오답자 동시 표기 처리 정책
 - 중간 참여 player의 진입/안내/기록 보존 UX
+- 등수정보/제출현황을 정답자·오답자·미풀이자에게 어디까지 다르게 보여줄지
+- 복습 모드 동선 수정의 최종 상세
 
 ## 출처
 
