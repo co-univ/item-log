@@ -2,8 +2,8 @@
 title: 핵심 용어
 type: glossary
 status: stable
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
-updated: 2026-05-03
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 핵심 용어
@@ -26,7 +26,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 - **답안** — 주관식·빈칸·순서의 정답.
 - **인정답안** — 표기 차이가 있어도 정답으로 인정하는 변형. 답안마다 최대 5개. 정답 영역에는 노출 안 됨.
 - **보기** (순서 유형) — player에게 보여주는 항목. 알파벳 자동 부여, 변경 불가.
-- **카테고리** — 문제셋 분류 태그. 다중 선택, 무제한 추가, [카테고리 관리](../features/category-management.md)와 연동.
+- **카테고리** — 문제셋 분류 태그. 다중 선택, 무제한 추가, [카테고리 관리](../features/category-management.md)와 연동. 2026-04-26에는 영어 기준 40자 제한으로 기록됐지만, 2026-05-04 디자인 메모에서는 40자 초과 입력도 허용하는 방향이 추가돼 최종 정책 확인이 필요하다.
 - **문제 신뢰성** — 문제의 출처와 채점 가능성이 사용자에게 납득되는 상태. 초기 기획에서 문제 확보 전략의 핵심 기준으로 논의됐다.
 
 ## 풀이 방식 / 모드
@@ -68,7 +68,8 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 ## 결과 / 통계
 
 - **우승자 화면** — 풀이 종료 직후 player에게 노출되는 화면. "풀이결과 보러가기" 진입점 포함. 자체 명세는 누락.
-- **등수정보** — 실시간 풀이 중 player에게 보여줄 수 있는 순위/제출 현황 계열 정보. 2026-04-19 회의에서는 실시간 참여 인원, 제출 현황, 최초 제출자와의 시간 차이 등이 후보로 논의됐다.
+- **등수정보** — 실시간 풀이 중 player에게 보여줄 수 있는 순위/제출 현황 계열 정보. 2026-05-04 기준 우선 작업은 1등과의 시간 차이와 실시간 참여 인원 표기이며, 제출 답안 목록과 이모지 리액션은 후속 검토 항목이다.
+- **이모지 리액션** — 풀이 중 정오답/등수 피드백과 함께 사용할 수 있는 반응 UI 후보. 기본 이모지 개수와 표시 방식은 미정이며 `MAIT-138`로 추적한다.
 - **풀이결과 대시보드** — [features/result-dashboard.md](../features/result-dashboard.md). 메인(전체 통계) + 상세(셋별 결과).
 - **우리팀 랭킹** — 메인은 실시간 모드 전체 집계, 상세는 해당 셋 집계.
 - **개인 정답률** — 푼 문제셋 개수 대비 맞은 문제 수 비율. 원그래프.
@@ -82,10 +83,11 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 - **그룹/팀** — 문제셋 단위로 maker/player를 묶는 공간. 명세에서 그룹과 팀이 혼용됨 (정확한 구분 명세 누락).
 - **팀 탈퇴** — 팀 멤버가 팀에서 나가는 흐름. 2026-04-19 기준으로 접근 권한은 제거하지만 기존 풀이/생성 데이터는 유지하는 방향.
 - **팀 삭제** — 팀 자체를 삭제하는 흐름. 2026-04-19 기준으로 팀, 멤버, 초대링크, 가입 신청, 풀이 기록, 문제셋/문제까지 완전 삭제하는 방향.
+- **알림** — 팀 초대/탈퇴/삭제, 인정답안 변경처럼 사용자의 상태 변화를 알려주는 기능. 2026-05-04 회의에서 owner/maker/player별 수신자와 클릭 후 이동 규칙이 구체화됐다. [알림](../features/user-notifications.md)
 
 ## 분석 / 운영
 
-- **GA4** — 제품 사용 이벤트 분석 도구. 2026-04-26 회의에서는 AI 생성 시간, 로딩 UI 이탈률, 문제셋 제목 수정 클릭 수를 후보 지표로 논의했다.
+- **GA4** — 제품 사용 이벤트 분석 도구. 2026-04-26 회의에서는 AI 생성 시간, 로딩 UI 이탈률, 문제셋 제목 수정 클릭 수를 후보 지표로 논의했고, 2026-05-04에는 이벤트를 카테고리화해서 컴포넌트에 적용 가능한지 구분하는 일이 남았다.
 - **뷰저블** — 사용자 행동 분석 도구로 언급됨. 온보딩/GA 분석과 함께 검토 필요.
 - **item-log** — 아이템별 논의 히스토리를 잃지 않기 위한 보조 레포/방식으로 2026-04-26 회의에서 언급됐다.
 

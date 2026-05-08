@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 문제셋 생성 플로우
@@ -48,6 +48,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 2026-02-22 회의에서는 생성 직후 다이렉트 URL, 제목 수정, 미리보기 전환, 객관식/순서형 수정 버튼 비활성 조건, 주관식 인정답안 처리처럼 편집 UX 전반을 다시 손봐야 한다는 공감대가 생겼다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 같은 회의에서 카테고리 기획은 구현 검토를 마치고 디자인 단계로 넘길 수 있는 수준까지 정리됐다고 보고됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-01-11 회의에서는 보충설명 placeholder, 문제 수정 페이지의 문제셋 제목 노출, 팀 선택 창/사이드바 스크롤처럼 편집 맥락 유지와 탐색성 관련 보완 요구가 별도로 쌓여 있었다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md)
+- 2026-05-04 회의에서는 문제 생성 시 풀이 방식 기본값이 실시간 모드라는 점이 확인됐고, 문제 제목 기본값 삭제가 신규 `MAIT-139`로 생성됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ### 3단계 — 질문 편집 → 생성하기
 
@@ -87,6 +88,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 전체 공개 시 비-player 사용자 접근 정책 (1.3)
 - 2.2 번호 중복 (카테고리 vs 주제)
 - 2.5 풀이 대상 정의
+- 문제 제목 기본값 삭제 이후 placeholder와 validation 정책
 
 ## 출처
 

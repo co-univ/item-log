@@ -2,8 +2,8 @@
 title: 카테고리 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
-updated: 2026-05-03
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 카테고리 관리
@@ -19,6 +19,7 @@ updated: 2026-05-03
 - 2026-03-29에서는 카테고리를 4월 말~5월 초 반영 후보로 보고, 명세 확정 여부를 먼저 점검하기로 했다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-04-19 회의에서는 카테고리 명세서 업데이트와 디자인 공유가 완료/점검 항목으로 기록됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
 - 2026-04-26 회의에서는 카테고리 최종 디자인 전달 후, 카테고리명은 영어 기준 40자 제한으로 정리하고 40자를 넘겼을 때의 경고 문구와 명세 업데이트가 할 일로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+- 2026-05-04 회의에서는 카테고리 전달이 완료됐고, 디자인 메모에서 40자 초과 입력도 허용하는 방향이 추가됐다. 따라서 최종 정책은 `40자 제한`과 `초과 허용+표시` 사이의 정리가 필요하다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ## 1.1 카테고리 추가
 
@@ -44,7 +45,8 @@ updated: 2026-05-03
 ## 카테고리명 제한
 
 - 2026-04-26 회의 기준으로 카테고리명은 **영어 기준 40자 제한**을 두는 방향으로 기록됐다.
-- 40자를 넘겼을 때 제한이 있음을 알려주는 디자인과 문구가 필요하다.
+- 2026-05-04 디자인 메모에서는 **40자 넘는 입력도 허용**한다고 적혀 있다.
+- 따라서 현재 wiki 기준 최종 정책은 미정이다. 구현/문구는 제한을 강제할지, 입력은 허용하되 초과 상태를 보여줄지 확인해야 한다.
 
 ## 관련
 
@@ -55,7 +57,7 @@ updated: 2026-05-03
 
 - 복구 모달의 "복구" 액션 결과 — 복구된 카테고리는 어떤 상태로 나오는지 (사용 이력 포함? 빈 상태?)
 - 카테고리명 40자 제한을 한글/영문/공백/특수문자에서 어떻게 계산할지
-- 40자 초과 시 경고 문구의 최종 문안
+- 40자 초과 시 입력 차단인지 초과 허용+경고인지, 그리고 경고 문구의 최종 문안
 
 ## 출처
 
@@ -66,3 +68,4 @@ updated: 2026-05-03
 - [sources/2026-03-29-weekly-meeting.md](../sources/2026-03-29-weekly-meeting.md)
 - [sources/2026-04-19-weekly-meeting.md](../sources/2026-04-19-weekly-meeting.md)
 - [sources/2026-04-26-weekly-meeting.md](../sources/2026-04-26-weekly-meeting.md)
+- [sources/2026-05-04-weekly-meeting.md](../sources/2026-05-04-weekly-meeting.md)

@@ -2,8 +2,8 @@
 title: 풀이관리 (maker 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
-updated: 2026-05-03
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 풀이관리
@@ -83,11 +83,19 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 풀이 중 새 player가 가입한 경우, **종료 처리 이전에 들어온 player까지 팀원으로 간주** → 그 인원까지 다 풀어야 자동 종료.
 - **수동 종료**도 가능.
 - 2026-04-26 회의에서는 학습모드 관리 API 중 `풀이 시작`과 `종료`는 정리됐고, `자동 종료`는 별도 후속 작업으로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+- 2026-05-04 회의에서는 자동 종료 엣지 케이스 문의가 있었고, 논의한 안대로 진행하기로 했다. 해당 안의 상세는 디스코드 스레드에만 있어 wiki에는 아직 직접 반영하지 않는다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ### 1.4 문제 이동
 - 상단 번호 클릭 / "이전문제" / "다음문제".
 - 마지막 문제에서 "다음문제" → "**종료하기**"로 변경.
 - 종료하기 → 공개범위 설정(전체/그룹/비공개) → 확인 → 복습 화면.
+
+### 관리자뷰 개선 후보
+
+- 학습모드 배포 이후에는 풀이관리에서 현재 팀원들의 풀이 현황과 결과를 보여줘야 하는지 검토하기로 했다.
+- 백엔드 할 일에는 학습모드 대시보드 관련 API가 별도 항목으로 남았다.
+
+근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md).
 
 ## 주간 회의에서 나온 후속 메모
 
@@ -103,6 +111,7 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 같은 회의에서 사이드바 자동 접힘 기준은 단순 반응형 이슈가 아니라, 어떤 상황에서 조작을 숨길지에 대한 규칙 정의 문제로 다뤄졌다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-02-22 회의에서는 우승자 선정 후 종료하기 팝업 미노출 문제가 배포 준비 항목으로 별도 점검됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-04-26 회의에서는 학습모드 관리 API와 프론트 학습모드 화면이 배포 후속 작업으로 이어졌고, 자동 종료와 제출/채점이 남은 항목으로 기록됐다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+- 2026-05-04 회의에서는 학습모드 자동 종료 엣지 케이스를 논의한 안대로 진행하기로 했고, 관리자뷰/대시보드 API 개선은 배포 이후 고려 항목으로 남겼다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ## 관련
 
@@ -115,7 +124,8 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 
 - 1.4 (선착순) 답안 글자수 제한 — "디자인 확인 후 글자수 제한 필요"
 - 학습 모드 1.2/1.3은 "선착순과 동일"이라 적혀있지만 차이가 있을 수 있음 (검증 필요)
-- 학습모드 자동 종료 API/이벤트의 최종 구현 상태
+- 학습모드 자동 종료 API/이벤트의 최종 구현 상태와 디스코드 스레드에 남은 엣지 케이스 상세
+- 학습모드 관리자뷰에서 팀원별 풀이 현황과 결과를 어디까지 보여줄지
 - 실시간 중간 참여자에게 어떤 시점에 어떤 문구/토스트를 노출할지
 - 사이드바 자동 접힘 기준과 반응형 예외 규칙
 

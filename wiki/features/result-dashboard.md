@@ -2,8 +2,8 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 풀이결과 대시보드
@@ -89,6 +89,7 @@ updated: 2026-04-25
 - 2026-03-22 회의에서는 대시보드에 닉네임만 노출하는 방향이 별도 후속 작업으로 정리됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-02-22 회의에서는 평균 지표 노출 문의가 운영 이슈로 다시 올라와, 카드/통계의 해석 기준을 명확히 해야 함이 드러났다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-01-25 회의에서도 풀이 결과 대시보드는 코테이토 사용 준비를 위한 별도 점검 항목으로 남아 있었다. [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)
+- 2026-05-04 회의에서는 학습모드 종료 이후 결과를 다시 보는 플로우와 풀이관리에서 팀원별 풀이 현황/결과를 보여줄 필요가 제기됐고, 백엔드 할 일에 학습모드 대시보드 관련 API가 남았다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ## 관련
 
@@ -99,6 +100,7 @@ updated: 2026-04-25
 ## 미해결
 
 - 학습 모드 결과의 전체 종합 위치 (메인 랭킹은 실시간 전용)
+- 학습모드 완료 후 결과 재확인 플로우와 관리자뷰/대시보드 API의 경계
 - "내 정답률 vs 전체 평균"의 평균 단위 (팀 / 서비스 전체)
 - 우승자 화면 자체의 본 명세 누락
 

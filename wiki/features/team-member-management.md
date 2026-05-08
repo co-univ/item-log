@@ -2,8 +2,8 @@
 title: 팀 멤버 권한 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
-updated: 2026-05-03
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 팀 멤버 권한 관리
@@ -58,10 +58,12 @@ updated: 2026-05-03
 - 2025-12-07 회의에서도 팀 역할 이동 문의 문서가 다시 연결돼, 명세와 운영 질문을 함께 관리해야 하는 영역임이 드러났다. [2025-12-07 주간 회의록](../sources/2025-12-07-weekly-meeting.md)
 - 2025-12-10 회의에서도 팀원 권한 이동 관련 문의 문서가 다시 연결돼, 명세/문의 정합성이 계속 중요했다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
 - 2026-04-19 회의에서는 팀 탈퇴와 팀 삭제가 별도 데이터 처리 정책으로 구체화됐고, 2026-04-26 회의에서는 메일 수신과 삭제 데이터 보정이 배포 후 확인 항목으로 남았다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+- 2026-05-04 회의에서는 LNB에서 팀관리로 들어갈 때 멤버관리로 기본 이동하는 방향이 디자인 메모로 남았고, owner 대상 초대 완료/팀 탈퇴 알림도 멤버관리 페이지로 연결하기로 했다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ## 미해결
 
 - owner 권한 양도 흐름 (owner → 다른 maker로 변경 가능한가)
+- LNB 팀관리 진입 시 멤버관리 default 이동의 적용 범위
 - 팀 탈퇴/삭제는 [팀 탈퇴/삭제](./team-exit-and-deletion.md)에서 별도 추적
 
 ## 출처

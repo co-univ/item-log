@@ -2,8 +2,8 @@
 title: 로그인 / 회원가입 / 마이페이지
 type: feature
 status: draft
-sources: [raw/2025-10-24-spec-auth-mypage.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-23-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md]
-updated: 2026-05-03
+sources: [raw/2025-10-24-spec-auth-mypage.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-23-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 로그인 / 회원가입 / 마이페이지
@@ -78,6 +78,7 @@ mait 사용자 진입과 계정 관리 영역. 정책 디테일은 [decisions/ac
 - 같은 회의에서 회원가입 이후 온보딩은 메인 화면 가이드와 상세 기능 튜토리얼을 분리하는 방향으로 논의됐지만, 노출 대상과 횟수 기준은 아직 정해지지 않았다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-04-19 회의에서는 온보딩 텍스트를 줄이고 순서 정보를 표기하는 수정이 완료 항목으로 올라왔다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
 - 2026-04-26 회의에서는 온보딩 디자인이 아직 남은 작업으로 기록됐다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
+- 2026-05-04 회의에서는 토큰 재발급 실패가 운영 이슈로 공유됐고, 재현 조건과 인증 처리 범위 확인을 위해 `MAIT-137`로 새로 추적하기로 했다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 
 ## 관련
 
@@ -85,7 +86,7 @@ mait 사용자 진입과 계정 관리 영역. 정책 디테일은 [decisions/ac
 
 ## 미해결
 
-- "로그인 유지"의 토큰 정책 (만료/refresh)
+- "로그인 유지"의 토큰 정책 (만료/refresh)과 토큰 재발급 실패 이슈의 재현 조건
 - 금지어 리스트 출처/관리 주체
 - 소셜과 로컬의 동일 이메일 계정 merge 정책
 - 프로필 사진 등 추가 항목

@@ -2,8 +2,8 @@
 title: 팀 사용자 초대
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
+updated: 2026-05-08
 ---
 
 # 팀 사용자 초대
@@ -24,6 +24,7 @@ updated: 2026-04-25
 ### 알림
 - 초대된 사용자에게 알림: "~~팀에 maker로 초대되었습니다."
 - 알림 클릭 → 해당 팀의 문제 풀기 페이지로 이동.
+- 2026-05-04 회의에서는 owner에게 `000님 초대가 완료` 알림을 보내고, 클릭 시 멤버관리 페이지로 이동하는 규칙이 추가로 정리됐다. 자세한 역할별 알림은 [알림](./user-notifications.md) 참고.
 
 ## 2.2 초대 링크 생성
 

@@ -215,3 +215,35 @@ Confluence 5개 페이지 일괄 ingest:
   - index.md
 - 주요 반영: 4/21 배포 후속, 학습모드 API/프론트 진행상황, 카테고리명 40자 제한, GA4 지표 후보, 지식 베이스 운영 원칙
 - 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 실제 회의 내용이 작성되어 있어 사용자 요청에 따라 ingest
+
+## [2026-05-08] ingest | 2026-04-26-weekly-meeting
+
+- 2026-05-08 Notion 후속 처리로 추가된 `6. AI의 요약`, `7. 할일 티켓 정리`를 raw/source/wiki에 보강
+- 신규 Jira `MAIT-136`(문제 셋 삭제 후 관련 데이터 노출 보정)과 기존 연결 티켓을 source에 반영
+- 기존 페이지 갱신:
+  - sources/2026-04-26-weekly-meeting.md
+  - features/problem-set-lifecycle.md
+  - index.md
+
+## [2026-05-08] ingest | 2026-05-04-weekly-meeting
+
+- Notion 페이지 `35587d59-2b6e-807c-9d36-f6cd61f85c1d`를 `raw/2026-05-04-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-04-weekly-meeting.md
+  - features/user-notifications.md
+- 기존 페이지 갱신:
+  - features/auth-and-account.md
+  - features/play-player.md
+  - features/play-management.md
+  - features/problem-set-lifecycle.md
+  - features/category-management.md
+  - features/product-analytics.md
+  - features/team-exit-and-deletion.md
+  - features/result-dashboard.md
+  - features/problem-set-creation.md
+  - features/team-invitation.md
+  - features/team-member-management.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 등수정보 우선순위, 역할별 알림 이동 규칙, 학습모드 결과/관리자뷰 개선 후보, 카테고리명 40자 정책 충돌, 토큰 재발급 이슈와 신규 Jira 4건
+- 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest
