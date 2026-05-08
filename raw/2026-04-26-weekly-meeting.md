@@ -5,7 +5,7 @@ source: notion
 source_url: https://www.notion.so/34a87d592b6e8008abe1c0fc3b1488f2
 source_id: 34a87d59-2b6e-8008-abe1-c0fc3b1488f2
 database_id: 17f87d59-2b6e-8030-b9a1-d54eccef48f7
-status: 예정
+status: 완료
 tags:
   - 주간
 participants:
@@ -16,8 +16,8 @@ participants:
   - 이하은
   - 전민재
 created_time: 2026-04-22T20:54:00+09:00
-last_modified: 2026-05-03T17:48:00+09:00
-ingested: 2026-05-03
+last_modified: 2026-05-08T00:47:00+09:00
+ingested: 2026-05-08
 ---
 
 # 2026-04-26 주간 회의록
@@ -25,9 +25,9 @@ ingested: 2026-05-03
 ## 메타
 
 - Notion 페이지: <https://www.notion.so/34a87d592b6e8008abe1c0fc3b1488f2>
-- 상태: 예정
+- 상태: 완료
 - 구분: 주간
-- 비고: Notion 상태 속성은 `예정`이지만, 2026-04-26 회의 내용과 하위 토글이 실제로 작성되어 있어 raw 스냅샷으로 보관한다. 스냅샷 시점에는 `6. AI의 요약`, `7. 할일 티켓 정리` 블록은 보이지 않았다.
+- 비고: 2026-05-08에 `6. AI의 요약`, `7. 할일 티켓 정리`가 Notion에 추가되어 raw 스냅샷을 최신 상태로 보강했다.
 
 ## 원문 스냅샷
 
@@ -237,3 +237,31 @@ ingested: 2026-05-03
 ### 5. 건의사항
 
 - 별도 내용 없음
+
+### 6. AI의 요약
+
+- 이번 회의는 4월 21일 배포 후속 확인과 5월 12일 배포 범위를 다시 정리하는 흐름이었다. 문제 셋 삭제는 관련 데이터가 남지 않는지 재확인이 필요했고, 팀 탈퇴/팀 삭제는 이메일 수신자 확인과 팀 삭제 데이터 보정이 후속으로 남았다.
+- 학습모드는 백엔드가 풀이 시작/종료 API를 추가하고 자동 종료는 EDU-491로 추적 중이며, 프론트는 관리/풀이 탭과 풀이 화면을 마쳤지만 제출/채점은 진행 중이었다. 따라서 당장 개발 흐름은 프론트 마무리와 필요한 API 대응 중심으로 잡혔다.
+- 카테고리는 최종 디자인이 전달됐고, 카테고리명은 영어 기준 40자 제한으로 정리됐다. 40자 초과 시 경고 문구와 명세 업데이트, 반응형에서 2열이 깨질 때의 기준이 남은 의사결정/문서화 포인트다.
+- GA4는 다음 회의 전까지 준비해야 할 분석 항목으로 올라왔고, API 처리 시간이 아니라 화면에서 체감되는 AI 문제 생성 시간, 로딩 UI 이탈률, 제목 수정 연필 클릭 수를 관측 후보로 삼기로 했다.
+- 기획 완료 후 개발이 진행되지 않은 항목은 MAIT-66, MAIT-85, MAIT-106, MAIT-126으로 다시 확인했다. 개인 워크스페이스는 명세서 작성과 디자인 필요 여부 검토, 알림은 필요한 지점 정리와 기존 디자인 확인이 다음 액션이다.
+- 회의 말미에는 논의 히스토리를 기억하지 못하는 문제가 공유됐고, 회의록/기능 명세서/디스코드 스레드 같은 원본을 제대로 남기고 업데이트 사실을 알려야 지식 베이스가 유지된다는 운영 원칙이 확인됐다.
+
+### 7. 할일 티켓 정리
+
+생성 1건, 기존 연결 10건, 신규 생성 보류 3건.
+
+- 생성: [[유지보수] 문제 셋 삭제 후 관련 데이터 노출 보정 - MAIT-136](https://youthing.atlassian.net/browse/MAIT-136) - 배포 후 관련 데이터 잔존 여부 확인/보정.
+- 기존: [문제 풀이 - 학습모드 - MAIT-57](https://youthing.atlassian.net/browse/MAIT-57) - 프론트 제출/채점 마무리와 필요한 API 대응.
+- 기존: [[유지보수] 복습모드 제출 및 채점 동선 수정 - MAIT-87](https://youthing.atlassian.net/browse/MAIT-87) - 복습 모드 동선 수정.
+- 기존: [[개선] 우승자 선정 이후 종료 처리 5초 개선 필요 - MAIT-119](https://youthing.atlassian.net/browse/MAIT-119) - 우승자 선정 후 종료/닫기 흐름 개선.
+- 기존: [문제 셋 카테고리를 추가 - MAIT-66](https://youthing.atlassian.net/browse/MAIT-66) - 카테고리명 40자 제한, 경고 문구, 명세 업데이트 포함.
+- 기존: [GA4 및 데이터 등록 - MAIT-124](https://youthing.atlassian.net/browse/MAIT-124) - AI 생성 시간, 로딩 이탈률, 제목 수정 클릭 지표 정리.
+- 기존: [개인 워크스페이스 공간 생성 - MAIT-106](https://youthing.atlassian.net/browse/MAIT-106) - 명세서 작성 및 디자인 필요 여부 검토.
+- 기존: [유저 알림 기능을 도입한다 - MAIT-126](https://youthing.atlassian.net/browse/MAIT-126) - 알림이 필요한 지점 정리와 기존 디자인 확인.
+- 기존: [온보딩 과정 개선 - MAIT-85](https://youthing.atlassian.net/browse/MAIT-85) - 디자인 시작 및 온보딩 후속.
+- 기존: [[신규] 실시간 풀이 중 등수에 대한 정보를 노출하는 방법에 대한 고민 - MAIT-86](https://youthing.atlassian.net/browse/MAIT-86) - 등수정보 노출 기획 구체화.
+- 기존: [팀 삭제 - MAIT-82](https://youthing.atlassian.net/browse/MAIT-82) - 팀 삭제 미완성 데이터 보정 및 메일 확인 범위.
+- 보류: [팀 탈퇴하기 기능 - MAIT-81](https://youthing.atlassian.net/browse/MAIT-81) - 배포 완료 상태라 새 티켓은 만들지 않고 이메일 수신 확인 메모로 남김.
+- 보류: [EDU-491](https://youthing.atlassian.net/browse/EDU-491) - 학습모드 자동 종료는 회의록에 이미 별도 추적 링크가 있어 MAIT 신규 티켓은 만들지 않음.
+- 보류: 디스코드 스레드 반영/PM Agent - 제품 백로그가 아니라 지식 베이스 운영 개선으로 분류해 MAIT 티켓은 만들지 않음.
