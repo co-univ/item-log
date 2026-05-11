@@ -2,8 +2,8 @@
 title: 팀 탈퇴 / 팀 삭제
 type: feature
 status: draft
-sources: [raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
+updated: 2026-05-11
 ---
 
 # 팀 탈퇴 / 팀 삭제
@@ -35,8 +35,9 @@ updated: 2026-05-08
 - 실시간 진행 중인 문제셋이 있어도 삭제하는 쪽으로 기록돼 있다.
 - 2026-04-26 배포 후속에서는 팀 삭제 관련 미완성 데이터 보정 작업과 팀원 메일 수신 확인이 남았다.
 - 2026-05-04 회의에서는 `삭제한 팀 하위 데이터 접근 차단`이 백엔드 작업 항목으로 다시 올라왔다. owner가 팀을 삭제한 경우 maker/player에게는 이동 없는 알림을 보내는 방향이다.
+- 2026-05-10 회의에서도 `팀삭제 데이터 보정 작업`이 백엔드 후속으로 남았고, 기존 `MAIT-82`에서 이어가기로 했다.
 
-근거: [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md).
+근거: [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md).
 
 ## 배포 후 확인 항목
 
@@ -51,6 +52,7 @@ updated: 2026-05-08
 - 2026-04-19 회의에서 팀 탈퇴와 팀 삭제의 데이터 처리 방향이 구체화됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
 - 2026-04-26 회의에서는 배포 후 팀 탈퇴/삭제 메일과 삭제 데이터 보정이 확인 항목으로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 팀 탈퇴/삭제 알림의 수신자와 클릭 후 이동 여부, 삭제한 팀 하위 데이터 접근 차단 작업이 추가로 정리됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-05-10 회의에서는 팀삭제 데이터 보정 작업이 기존 Jira에서 계속 추적되는 후속으로 남았다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 
 ## 관련
 

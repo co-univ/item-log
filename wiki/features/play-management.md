@@ -2,8 +2,8 @@
 title: 풀이관리 (maker 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
+updated: 2026-05-11
 ---
 
 # 풀이관리
@@ -94,8 +94,9 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 
 - 학습모드 배포 이후에는 풀이관리에서 현재 팀원들의 풀이 현황과 결과를 보여줘야 하는지 검토하기로 했다.
 - 백엔드 할 일에는 학습모드 대시보드 관련 API가 별도 항목으로 남았다.
+- 2026-05-10 회의에서도 학습모드 대시보드 관련 API 검토와 학습모드에서 대시보드로 가는 동선이 후속 할 일로 다시 올라왔다.
 
-근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md).
+근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md).
 
 ## 주간 회의에서 나온 후속 메모
 
@@ -112,6 +113,7 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 2026-02-22 회의에서는 우승자 선정 후 종료하기 팝업 미노출 문제가 배포 준비 항목으로 별도 점검됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-04-26 회의에서는 학습모드 관리 API와 프론트 학습모드 화면이 배포 후속 작업으로 이어졌고, 자동 종료와 제출/채점이 남은 항목으로 기록됐다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 학습모드 자동 종료 엣지 케이스를 논의한 안대로 진행하기로 했고, 관리자뷰/대시보드 API 개선은 배포 이후 고려 항목으로 남겼다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-05-10 회의에서는 학습모드 대시보드 관련 API와 대시보드 이동 동선 검토가 기존 `MAIT-133` 흐름에서 다시 확인됐다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 
 ## 관련
 

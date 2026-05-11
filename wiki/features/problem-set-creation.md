@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
+updated: 2026-05-11
 ---
 
 # 문제셋 생성 플로우
@@ -28,7 +28,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 | 2.1 생성 방식 | O | AI 생성 / 직접 제작 — 직접 제작은 풀이 대상·자료·보충설명 비활성화 |
 | 2.2 카테고리 | O | 드롭다운, 개수 무제한, 검색·신규 추가 가능, 카테고리 관리와 연동 |
 | 2.2 주제 | O | 글자수 제한 없음 |
-| 2.3 질문 유형 | - | 객관식/주관식/빈칸/순서 다중 선택, 유형별 개수 미입력 시 2개 default |
+| 2.3 질문 유형 | - | 객관식/주관식/빈칸/순서 다중 선택, 2026-05-10 회의에서는 유형 기본 세팅을 각 유형 1개씩으로 정리 |
 | 2.4 풀이 방식 | - | 실시간 / 학습 |
 | 2.5 풀이 대상 | - | (명세 미정) |
 | 2.6 자료 업로드 | - | pdf, pptx, ppt, doc, docx, hwp, hwpx (다중 업로드) |
@@ -49,6 +49,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 같은 회의에서 카테고리 기획은 구현 검토를 마치고 디자인 단계로 넘길 수 있는 수준까지 정리됐다고 보고됐다. [2026-02-22 주간 회의록](../sources/2026-02-22-weekly-meeting.md)
 - 2026-01-11 회의에서는 보충설명 placeholder, 문제 수정 페이지의 문제셋 제목 노출, 팀 선택 창/사이드바 스크롤처럼 편집 맥락 유지와 탐색성 관련 보완 요구가 별도로 쌓여 있었다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md)
 - 2026-05-04 회의에서는 문제 생성 시 풀이 방식 기본값이 실시간 모드라는 점이 확인됐고, 문제 제목 기본값 삭제가 신규 `MAIT-139`로 생성됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-05-10 회의에서는 문제 정보 입력 화면과 문제셋 생성 시 정보 입력 화면을 통일하는 방향이 정리됐다. 학습모드/실시간모드 선택은 초기 화면 앞쪽에 배치하고, 자료 업로드나 보충 설명처럼 보여야 하지만 수정하면 안 되는 필드는 읽기 전용으로 노출해야 한다. 이 후속은 `MAIT-141`로 생성됐다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 
 ### 3단계 — 질문 편집 → 생성하기
 
@@ -89,9 +90,11 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 2.2 번호 중복 (카테고리 vs 주제)
 - 2.5 풀이 대상 정의
 - 문제 제목 기본값 삭제 이후 placeholder와 validation 정책
+- 통일된 문제 정보 입력 화면의 상세 UI와 저장 시 화면 구성
 
 ## 출처
 
 - [sources/2026-04-14-spec-problem-management.md](../sources/2026-04-14-spec-problem-management.md)
 - [sources/2026-02-22-weekly-meeting.md](../sources/2026-02-22-weekly-meeting.md)
 - [sources/2026-01-11-weekly-meeting.md](../sources/2026-01-11-weekly-meeting.md)
+- [sources/2026-05-10-weekly-meeting.md](../sources/2026-05-10-weekly-meeting.md)

@@ -247,3 +247,22 @@ Confluence 5개 페이지 일괄 ingest:
   - index.md
 - 주요 반영: 등수정보 우선순위, 역할별 알림 이동 규칙, 학습모드 결과/관리자뷰 개선 후보, 카테고리명 40자 정책 충돌, 토큰 재발급 이슈와 신규 Jira 4건
 - 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest
+
+## [2026-05-11] ingest | 2026-05-10-weekly-meeting
+
+- Notion 페이지 `35987d59-2b6e-808f-b739-ea4cdec4fefb`를 `raw/2026-05-10-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-10-weekly-meeting.md
+  - features/navigation-and-guidance.md
+- 기존 페이지 갱신:
+  - features/problem-set-creation.md
+  - features/play-player.md
+  - features/play-management.md
+  - features/result-dashboard.md
+  - features/category-management.md
+  - features/product-analytics.md
+  - features/team-exit-and-deletion.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 메인페이지 앵커 `#guide`/`#features`, 문제셋 정보 입력 화면 통일, 학습/복습 모드 별도 나가기/브레드크럼 미사용 방향, 기본 이모지 5개와 유형별 제출 현황 UI, 카테고리 카드/목록 노출 검토, 신규 Jira 6건
+- 주의: Wiki Repo 모순점 정리는 회의록에 포함됐지만 사용자 요청에 따라 제품 팔로우업 티켓 대상에서는 제외

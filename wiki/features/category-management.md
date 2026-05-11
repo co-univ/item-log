@@ -2,8 +2,8 @@
 title: 카테고리 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
+updated: 2026-05-11
 ---
 
 # 카테고리 관리
@@ -20,6 +20,7 @@ updated: 2026-05-08
 - 2026-04-19 회의에서는 카테고리 명세서 업데이트와 디자인 공유가 완료/점검 항목으로 기록됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md)
 - 2026-04-26 회의에서는 카테고리 최종 디자인 전달 후, 카테고리명은 영어 기준 40자 제한으로 정리하고 40자를 넘겼을 때의 경고 문구와 명세 업데이트가 할 일로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 카테고리 전달이 완료됐고, 디자인 메모에서 40자 초과 입력도 허용하는 방향이 추가됐다. 따라서 최종 정책은 `40자 제한`과 `초과 허용+표시` 사이의 정리가 필요하다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-05-10 회의에서는 카테고리 테이블/API 작업이 체크됐고, 카테고리 추가 후 문제셋 목록이나 문제 카드에 카테고리를 노출할지 여부가 남은 의사결정으로 올라왔다. 현재 디자인에서는 바로 추가가 어려워 보이나 UI 개선 시 함께 검토하는 방향이다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 
 ## 1.1 카테고리 추가
 
@@ -58,6 +59,7 @@ updated: 2026-05-08
 - 복구 모달의 "복구" 액션 결과 — 복구된 카테고리는 어떤 상태로 나오는지 (사용 이력 포함? 빈 상태?)
 - 카테고리명 40자 제한을 한글/영문/공백/특수문자에서 어떻게 계산할지
 - 40자 초과 시 입력 차단인지 초과 허용+경고인지, 그리고 경고 문구의 최종 문안
+- 문제셋 목록/문제 카드에 카테고리 값을 노출할지, 노출한다면 어떤 카드 UI 개선과 함께 처리할지
 
 ## 출처
 
@@ -69,3 +71,4 @@ updated: 2026-05-08
 - [sources/2026-04-19-weekly-meeting.md](../sources/2026-04-19-weekly-meeting.md)
 - [sources/2026-04-26-weekly-meeting.md](../sources/2026-04-26-weekly-meeting.md)
 - [sources/2026-05-04-weekly-meeting.md](../sources/2026-05-04-weekly-meeting.md)
+- [sources/2026-05-10-weekly-meeting.md](../sources/2026-05-10-weekly-meeting.md)
