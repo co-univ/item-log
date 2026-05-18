@@ -2,8 +2,8 @@
 title: 카테고리 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
-updated: 2026-05-11
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-19
 ---
 
 # 카테고리 관리
@@ -21,6 +21,7 @@ updated: 2026-05-11
 - 2026-04-26 회의에서는 카테고리 최종 디자인 전달 후, 카테고리명은 영어 기준 40자 제한으로 정리하고 40자를 넘겼을 때의 경고 문구와 명세 업데이트가 할 일로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 카테고리 전달이 완료됐고, 디자인 메모에서 40자 초과 입력도 허용하는 방향이 추가됐다. 따라서 최종 정책은 `40자 제한`과 `초과 허용+표시` 사이의 정리가 필요하다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 카테고리 테이블/API 작업이 체크됐고, 카테고리 추가 후 문제셋 목록이나 문제 카드에 카테고리를 노출할지 여부가 남은 의사결정으로 올라왔다. 현재 디자인에서는 바로 추가가 어려워 보이나 UI 개선 시 함께 검토하는 방향이다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
+- 2026-05-14 사용자 문의에서는 카테고리를 팀별로 자유롭게 세팅하는 해시태그/공통 범위 개념으로 설명했다. 코테이토 교육팀 예시로는 `#운영체제`, `#객체지향` 같은 과목명을 넣는 사용 방식이 언급됐고, 나중에는 카테고리 선택으로 관련 문제셋을 모아보는 방향도 가능하다고 답했다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
 ## 1.1 카테고리 추가
 
@@ -49,6 +50,15 @@ updated: 2026-05-11
 - 2026-05-04 디자인 메모에서는 **40자 넘는 입력도 허용**한다고 적혀 있다.
 - 따라서 현재 wiki 기준 최종 정책은 미정이다. 구현/문구는 제한을 강제할지, 입력은 허용하되 초과 상태를 보여줄지 확인해야 한다.
 
+## 카테고리 수정 UX
+
+- 카테고리 수정 완료는 체크 아이콘으로 처리하는 방향이다.
+- 취소 동작을 위해 체크/엑스 형태를 둔다.
+- 목록은 한 번에 하나씩 다루고, 최근 추가 항목은 아래로 정렬하는 방향이다.
+- 이 후속은 신규 `MAIT-155`로 생성됐다.
+
+근거: [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md).
+
 ## 관련
 
 - [features/problem-set-creation.md](./problem-set-creation.md) — 카테고리 입력 진입점
@@ -60,6 +70,7 @@ updated: 2026-05-11
 - 카테고리명 40자 제한을 한글/영문/공백/특수문자에서 어떻게 계산할지
 - 40자 초과 시 입력 차단인지 초과 허용+경고인지, 그리고 경고 문구의 최종 문안
 - 문제셋 목록/문제 카드에 카테고리 값을 노출할지, 노출한다면 어떤 카드 UI 개선과 함께 처리할지
+- 카테고리 기반 문제셋 모아보기의 실제 제공 여부와 진입점
 
 ## 출처
 
@@ -72,3 +83,4 @@ updated: 2026-05-11
 - [sources/2026-04-26-weekly-meeting.md](../sources/2026-04-26-weekly-meeting.md)
 - [sources/2026-05-04-weekly-meeting.md](../sources/2026-05-04-weekly-meeting.md)
 - [sources/2026-05-10-weekly-meeting.md](../sources/2026-05-10-weekly-meeting.md)
+- [sources/2026-05-14-weekly-meeting.md](../sources/2026-05-14-weekly-meeting.md)

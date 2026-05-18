@@ -2,8 +2,8 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
-updated: 2026-05-11
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-19
 ---
 
 # 문제 풀기 (player 측)
@@ -60,7 +60,11 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 2026-05-10 회의에서는 `몇 초 늦었습니다` 안내/API 검토가 `MAIT-146`, 유형별 제출 답안 현황이 `MAIT-143`, 기본 이모지 5개 방향이 `MAIT-138`로 이어졌다. 제출 답안 현황은 객관식 버블 UI, 주관식 워드 클라우드, 순서 맞추기 Path UI가 후보로 남았다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 
+2026-05-14 회의에서는 유형별 제출 현황 구조가 피그마에서 확정됐지만, 퍼센트 바가 90:10처럼 작게 나뉘는 경우 10% 영역에 텍스트를 넣기 어렵다는 문제가 남았다. 퍼센트와 개수 노출 기준은 기획/디자인이 추가로 정해야 한다. 같은 회의에서 `MAIT-148`의 다음 작업으로 제출한 유저와 몇 초 차이나는지, 실시간 참여 인원 카운트 UI가 다시 확인됐다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+
 ## 2. 학습 모드
+
+학습 모드는 실시간 풀이 종료 후 자동 복사되는 상태가 아니라, 문제셋 생성 시 선택하는 별도 풀이 방식이다. 팀 단위 과제처럼 기간을 두고 팀원 각자가 가능한 시간에 풀며, 문제셋을 한 번에 풀고 제출하면 채점된다. 실시간 모드와 학습 모드에서 풀이 완료된 문제셋은 maker가 복습 모드로 넘길 수 있다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
 ### 문제셋별 상태 (4/11 추가)
 
@@ -110,6 +114,8 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 ## 3. 복습 모드
 
+복습 모드는 완료된 실시간/학습 문제셋을 maker가 넘긴 뒤 다시 풀거나 확인하는 상태다. 2026-05-14 회의에서는 복습 모드가 문제별로 답과 해설을 확인할 수 있고 별도 기록은 남기지 않는 흐름으로 사용자에게 설명됐다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+
 ### 3.1 문제 번호
 자유 이동.
 
@@ -157,6 +163,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 1.4 오답 재제출 시 정답자·오답자 동시 표기 처리 정책
 - 중간 참여 player의 진입/안내/기록 보존 UX
 - 등수정보/제출현황을 정답자·오답자·미풀이자에게 어디까지 다르게 보여줄지, 제출 답안 목록의 유형별 데이터와 이모지 리액션을 어떻게 제공할지
+- 유형별 제출 현황에서 퍼센트/개수 텍스트 노출 기준과 작은 비율 영역 처리
 - 학습모드 완료 결과 재확인과 채점 이후 화면의 최종 동선
 - 복습 모드 동선 수정의 최종 상세
 

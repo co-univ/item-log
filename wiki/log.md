@@ -266,3 +266,20 @@ Confluence 5개 페이지 일괄 ingest:
   - index.md
 - 주요 반영: 메인페이지 앵커 `#guide`/`#features`, 문제셋 정보 입력 화면 통일, 학습/복습 모드 별도 나가기/브레드크럼 미사용 방향, 기본 이모지 5개와 유형별 제출 현황 UI, 카테고리 카드/목록 노출 검토, 신규 Jira 6건
 - 주의: Wiki Repo 모순점 정리는 회의록에 포함됐지만 사용자 요청에 따라 제품 팔로우업 티켓 대상에서는 제외
+
+## [2026-05-19] ingest | 2026-05-14-weekly-meeting
+
+- Notion 페이지 `36087d59-2b6e-80b0-9fe4-cc1a08d75ffb`를 `raw/2026-05-14-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-14-weekly-meeting.md
+- 기존 페이지 갱신:
+  - features/problem-set-creation.md
+  - features/category-management.md
+  - features/play-player.md
+  - features/result-dashboard.md
+  - features/navigation-and-guidance.md
+  - decisions/visibility-states.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 카테고리/학습모드 문의 답변, 문제 생성 정보 입력 통합, 주제/제목 통합, 공개대상 선택 충돌 메모, 유형별 제출 현황 노출 기준 미결, 온보딩 개선, 카테고리 수정 UX와 신규 `MAIT-155`
+- 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest

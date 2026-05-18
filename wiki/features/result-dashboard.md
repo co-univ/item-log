@@ -2,8 +2,8 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
-updated: 2026-05-11
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-19
 ---
 
 # 풀이결과 대시보드
@@ -38,7 +38,7 @@ updated: 2026-05-11
 
 ### 1.3 카테고리별 정답률 바
 
-- 카테고리 = **문제셋의 주제 태그**
+- 기존 대시보드 명세는 카테고리를 **문제셋의 주제 태그**로 설명했지만, 2026-05-14 회의에서는 주제를 제목과 통합하고 카테고리는 별도 분류 태그로 설명했다. 따라서 이 지표의 집계 필드는 재확인이 필요하다.
 - 카테고리별 정답률을 바그래프
 - **상위 8개**만 default 노출, 나머지는 "더보기" 토글
 
@@ -91,6 +91,7 @@ updated: 2026-05-11
 - 2026-01-25 회의에서도 풀이 결과 대시보드는 코테이토 사용 준비를 위한 별도 점검 항목으로 남아 있었다. [2026-01-25 주간 회의록](../sources/2026-01-25-weekly-meeting.md)
 - 2026-05-04 회의에서는 학습모드 종료 이후 결과를 다시 보는 플로우와 풀이관리에서 팀원별 풀이 현황/결과를 보여줄 필요가 제기됐고, 백엔드 할 일에 학습모드 대시보드 관련 API가 남았다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 학습모드에서 대시보드로 가는 동선과 학습모드 대시보드 관련 API 검토가 다시 할 일로 올라왔다. 기존 `MAIT-133`에서 이어서 추적한다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
+- 2026-05-14 회의에서는 다음 배포의 풀이결과 대시보드 2차 작업을 기존 `MAIT-147`로 재사용하기로 했다. 카테고리별 정답률 통계, 문제셋별 오답률 통계와 추가 통계가 범위로 언급됐고, 실시간은 득점자 관련 통계, 학습모드는 본인 점수 중심으로 나뉘었다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
 ## 관련
 
@@ -102,8 +103,10 @@ updated: 2026-05-11
 
 - 학습 모드 결과의 전체 종합 위치 (메인 랭킹은 실시간 전용)
 - 학습모드 완료 후 결과 재확인 플로우와 관리자뷰/대시보드 API의 경계
+- 카테고리별 정답률의 집계 기준이 `주제 태그`인지 `카테고리`인지
 - "내 정답률 vs 전체 평균"의 평균 단위 (팀 / 서비스 전체)
 - 우승자 화면 자체의 본 명세 누락
+- 문제셋별 오답률 통계의 `+ a` 범위와 실시간/학습 통계 분기 기준
 
 ## 출처
 

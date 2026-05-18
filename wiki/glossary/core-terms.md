@@ -2,8 +2,8 @@
 title: 핵심 용어
 type: glossary
 status: stable
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
-updated: 2026-05-11
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-19
 ---
 
 # 핵심 용어
@@ -26,14 +26,14 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 - **답안** — 주관식·빈칸·순서의 정답.
 - **인정답안** — 표기 차이가 있어도 정답으로 인정하는 변형. 답안마다 최대 5개. 정답 영역에는 노출 안 됨.
 - **보기** (순서 유형) — player에게 보여주는 항목. 알파벳 자동 부여, 변경 불가.
-- **카테고리** — 문제셋 분류 태그. 다중 선택, 무제한 추가, [카테고리 관리](../features/category-management.md)와 연동. 2026-04-26에는 영어 기준 40자 제한으로 기록됐지만, 2026-05-04 디자인 메모에서는 40자 초과 입력도 허용하는 방향이 추가돼 최종 정책 확인이 필요하다.
+- **카테고리** — 문제셋 분류 태그. 다중 선택, 무제한 추가, [카테고리 관리](../features/category-management.md)와 연동. 2026-05-14 문의 답변에서는 팀별로 자율 설정하는 해시태그/공통 범위 개념으로 설명됐고, `#운영체제`, `#객체지향` 같은 과목명 예시가 언급됐다. 2026-04-26에는 영어 기준 40자 제한으로 기록됐지만, 2026-05-04 디자인 메모에서는 40자 초과 입력도 허용하는 방향이 추가돼 최종 정책 확인이 필요하다.
 - **문제 신뢰성** — 문제의 출처와 채점 가능성이 사용자에게 납득되는 상태. 초기 기획에서 문제 확보 전략의 핵심 기준으로 논의됐다.
 
 ## 풀이 방식 / 모드
 
 - **실시간 풀이** (선착순) — player가 동시 참여. 진행 예정 → 진행 중 → 종료됨.
-- **학습 풀이** — 세션 없이 개별 학습. 모든 인원 풀이 완료 시 자동 종료.
-- **복습** — 실시간/학습 풀이 종료 후 재방문하는 상태. 공개 범위 설정 가능.
+- **학습 풀이** — 팀원이 정해진 기간 안에 각자 가능한 시간에 푸는 과제형 모드. 실시간 풀이가 끝난 뒤 자동 복사되는 상태가 아니라 문제셋의 별도 풀이 방식이며, 문제셋을 한 번에 풀고 제출하면 채점된다. 모든 인원 풀이 완료 시 자동 종료.
+- **복습** — 실시간/학습 풀이 종료 후 maker가 넘길 수 있는 재방문 상태. 문제별 답과 해설을 확인할 수 있고 공개 범위 설정 가능.
 
 ## maker 측 풀이 제어
 
@@ -74,7 +74,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 - **풀이결과 대시보드** — [features/result-dashboard.md](../features/result-dashboard.md). 메인(전체 통계) + 상세(셋별 결과).
 - **우리팀 랭킹** — 메인은 실시간 모드 전체 집계, 상세는 해당 셋 집계.
 - **개인 정답률** — 푼 문제셋 개수 대비 맞은 문제 수 비율. 원그래프.
-- **카테고리별 정답률** — 카테고리(=문제셋 주제 태그)별 정답률 바그래프. 상위 8개 + 더보기.
+- **카테고리별 정답률** — 카테고리별 정답률 바그래프. 기존 대시보드 명세는 카테고리를 문제셋 주제 태그로 설명했지만, 2026-05-14 회의에서 주제는 제목과 통합하고 카테고리는 별도 분류 태그로 설명돼 집계 기준 확인이 필요하다. 상위 8개 + 더보기.
 - **평균 정답률** — 문제셋 카드에서 "내 정답률 vs 전체 평균" 비교용. 평균 단위(팀/서비스) 미정.
 - **오답률 top3** — 상세 대시보드에서 오답률 높은 질문 1~3위.
 - **점수** — `00점 (00/00)` 형식. **분모는 항상 전체 문제 수** — 탈락해도 분모 유지. [decisions/score-calculation.md](../decisions/score-calculation.md).

@@ -2,8 +2,8 @@
 title: 문제셋 공개 범위 정책 (전체/그룹/비공개)
 type: decision
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md, raw/2026-01-11-weekly-meeting.md]
-updated: 2026-04-25
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-04-11-spec-play-management.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-19
 ---
 
 # 문제셋 공개 범위 정책
@@ -40,6 +40,8 @@ updated: 2026-04-25
 
 > ⚠ **충돌 점검**: 4/14 [문제관리_문제생성 명세](../sources/2026-04-14-spec-problem-management.md) §3.12에는 여전히 "생성하기 모달에서 공개대상(그룹공개 default) 선택" 흐름이 남아있음. 12/10 결정이 명세에 반영되지 않았는지 / 4/14 명세가 우선인지 확인 필요. → [features/problem-set-creation.md](../features/problem-set-creation.md) "생성하기" 섹션 참고.
 
+2026-05-14 회의에서도 통일된 문제 생성 화면에서 `공개대상`을 디폴트 선택 없이 직접 선택하는 항목으로 언급했다. 이 메모는 12/10의 "생성 단계 공개대상 선택 삭제" 결정과 충돌할 수 있으므로, 최신 정책이 생성 단계 선택인지 종료 후 복습 전환 선택인지 확인해야 한다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+
 ## 초기 논의 흔적
 
 - 2025-10-12 회의에서는 검색에 어떤 공개 범위 조합을 허용할지 기준이 아직 흐릿하다는 메모가 남아 있었다. [2025-10-12 주간 회의록](../sources/2025-10-12-weekly-meeting.md)
@@ -58,7 +60,7 @@ updated: 2026-04-25
 ## 미해결
 
 - 전체공개 상태에서 비-player(검색 진입자)의 관리 흐름 — PDF 다운 → "내 문제셋으로 가져옴" 흐름의 정확한 UX 정의 필요.
-- 12/10 결정과 4/14 명세의 정합성.
+- 12/10 결정과 4/14 명세, 2026-05-14 회의 메모의 정합성.
 
 ## 관련
 
@@ -72,3 +74,4 @@ updated: 2026-04-25
 - [sources/2026-04-11-spec-player-view-play.md](../sources/2026-04-11-spec-player-view-play.md) (12/10 기획논의)
 - [sources/2025-12-17-spec-problem-search.md](../sources/2025-12-17-spec-problem-search.md) (검색 노출 조건)
 - [sources/2026-04-11-spec-play-management.md](../sources/2026-04-11-spec-play-management.md) (1.8, 1.4 종료 시 공개범위 모달)
+- [sources/2026-05-14-weekly-meeting.md](../sources/2026-05-14-weekly-meeting.md)
