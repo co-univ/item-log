@@ -2,8 +2,8 @@
 title: 점수 산정 정책
 type: decision
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md]
-updated: 2026-04-24
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md]
+updated: 2026-05-30
 ---
 
 # 점수 산정 정책
@@ -17,6 +17,8 @@ updated: 2026-04-24
 ## 핵심 규칙
 
 **분모는 항상 "문제셋의 전체 문제 수"이다.** 풀이 도중 탈락하여 뒷 문제를 풀지 못했더라도, 분모는 줄지 않고 못 푼 문제는 **오답 처리**.
+
+2026-05-26 Confluence v7 명세에서도 `00점 (00/00)` 형식과 전체 문제 개수 기준 계산이 유지됐다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
 
 ### 예시
 
@@ -43,3 +45,4 @@ updated: 2026-04-24
 ## 출처
 
 - [sources/2026-01-28-spec-result-dashboard.md](../sources/2026-01-28-spec-result-dashboard.md) (2.3 점수)
+- [sources/2026-05-26-spec-result-dashboard.md](../sources/2026-05-26-spec-result-dashboard.md) (2.3 점수)

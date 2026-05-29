@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
-updated: 2026-05-19
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-30
 ---
 
 # 문제셋 생성 플로우
@@ -29,7 +29,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 | 2.2 카테고리 | O | 드롭다운, 개수 무제한, 검색·신규 추가 가능, 카테고리 관리와 연동 |
 | 2.2 주제 | O | 2026-05-14 회의에서는 주제를 제목과 통합하는 방향으로 논의 |
 | 2.3 질문 유형 | - | 객관식/주관식/빈칸/순서 다중 선택, 2026-05-10 회의에서는 유형 기본 세팅을 각 유형 1개씩으로 정리 |
-| 2.4 풀이 방식 | - | 실시간 / 학습 |
+| 2.4 풀이 방식 | - | 실시간 / 학습. 단, 개인 워크스페이스는 실시간 모드 제외 |
 | 2.5 풀이 대상 | - | 2026-05-14 회의에서는 별도 필드 제거 후 보충 설명에 흡수하는 방향으로 논의 |
 | 2.6 자료 업로드 | - | pdf, pptx, ppt, doc, docx, hwp, hwpx (다중 업로드). 직접 제작에서는 노출하되 수정 불가 표시를 검토 |
 | 2.7 보충 설명 | - | 자유 입력. 직접 제작에서는 노출하되 수정 불가 표시를 검토 |
@@ -64,6 +64,8 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 학습 풀이 + 생성하기 → **학습풀이**
 - 생성하기 미실행 → **임시저장** ("문제셋1, 문제셋2..." 자동 명명)
 
+개인 워크스페이스에서는 실시간 모드를 제공하지 않고 학습/복습만 제공한다. 또한 학습 문제셋에도 풀이 시작/종료 기능은 제외된다. [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md)
+
 ## 생성하기 (3.12) 동작
 
 > ⚠ **12/10 기획논의와 충돌**: [decisions/visibility-states.md](../decisions/visibility-states.md) 참고. 12/10 결정은 "공개 대상 선택을 생성 단계에서 삭제, 그룹공개 default 고정, 복습 전환 시에만 정함"이지만, 4/14 명세는 여전히 생성하기 모달에 공개대상이 들어있음. 어느 쪽이 진실인지 확인 필요.
@@ -91,6 +93,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 주제/제목 통합과 문제 풀이 대상의 보충 설명 흡수 방향을 최종 명세와 UI에 반영
 - 통일된 문제 정보 입력 화면의 상세 UI와 저장 시 화면 구성
 - AI 생성/직접 제작/공개대상/풀이방식의 직접 선택 UX와 validation 정책
+- 개인 워크스페이스 문제 생성에서 실시간 풀이 옵션을 UI에서 완전히 숨길지, 선택 불가로 둘지
 
 ## 출처
 

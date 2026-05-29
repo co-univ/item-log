@@ -2,8 +2,8 @@
 title: 핵심 용어
 type: glossary
 status: stable
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
-updated: 2026-05-19
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-30
 ---
 
 # 핵심 용어
@@ -63,7 +63,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 - **북마크** — 컬렉션에 문제셋을 저장·열람. **팀으로 가져오거나 편집은 불가**.
 - **컬렉션** — 북마크의 저장 단위. 추가 가능. 자체 정의는 별도 명세 필요.
 - **개인 학습 공간** — "내 그룹에 추가" 시 선택 가능한 default 공간. 정의는 명세 누락.
-- **개인 워크스페이스** — 팀이 없을 때 진입하거나 문제셋을 담는 개인 단위 공간으로 회의에서 언급된 개념. 정식 명세는 아직 부족하다.
+- **개인 워크스페이스** — 팀이 없는 사용자가 로그인하거나 로그인 전 `바로 시작하기`로 진입할 때 자동 생성되는 개인 단위 공간. 개인 워크스페이스는 maker에 해당해 항상 문제 관리로 이동하며, 실시간 풀이와 풀이 시작/종료 기능은 제외된다. 문제 풀기는 학습/복습 모드만 제공하고 멤버관리는 비활성화한다. [개인 워크스페이스](../features/personal-workspace.md)
 
 ## 결과 / 통계
 

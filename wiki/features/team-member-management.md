@@ -2,13 +2,15 @@
 title: 팀 멤버 권한 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2025-10-23-weekly-meeting.md, raw/2025-10-26-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md]
+updated: 2026-05-30
 ---
 
 # 팀 멤버 권한 관리
 
 팀 페이지의 멤버 리스트 + 권한 변경 UI. 권한 정의 자체는 [decisions/permission-roles.md](../decisions/permission-roles.md).
+
+개인 워크스페이스에서는 멤버관리가 비활성화되고, `팀관리`는 `카테고리 관리`로 명칭이 바뀐다. [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md)
 
 ## 1.1 사용자 리스트 표시
 
@@ -59,13 +61,16 @@ updated: 2026-05-08
 - 2025-12-10 회의에서도 팀원 권한 이동 관련 문의 문서가 다시 연결돼, 명세/문의 정합성이 계속 중요했다. [2025-12-10 주간 회의록](../sources/2025-12-10-weekly-meeting.md)
 - 2026-04-19 회의에서는 팀 탈퇴와 팀 삭제가 별도 데이터 처리 정책으로 구체화됐고, 2026-04-26 회의에서는 메일 수신과 삭제 데이터 보정이 배포 후 확인 항목으로 남았다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 LNB에서 팀관리로 들어갈 때 멤버관리로 기본 이동하는 방향이 디자인 메모로 남았고, owner 대상 초대 완료/팀 탈퇴 알림도 멤버관리 페이지로 연결하기로 했다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-04-30 Confluence v7 명세에서도 maker/player 2컬럼, 승인 대기/완료 상태, owner 삭제 불가, 권한 전환, 무한 스크롤 규칙이 유지됐다. [2026-04-30 팀관리 명세서](../sources/2026-04-30-spec-team-member-and-category.md)
 
 ## 미해결
 
 - owner 권한 양도 흐름 (owner → 다른 maker로 변경 가능한가)
 - LNB 팀관리 진입 시 멤버관리 default 이동의 적용 범위
+- 개인 워크스페이스에서 멤버관리 메뉴를 숨길지 비활성 상태로 노출할지
 - 팀 탈퇴/삭제는 [팀 탈퇴/삭제](./team-exit-and-deletion.md)에서 별도 추적
 
 ## 출처
 
 - [sources/2026-04-14-spec-team-member-and-category.md](../sources/2026-04-14-spec-team-member-and-category.md) (1. 멤버 관리)
+- [sources/2026-04-30-spec-team-member-and-category.md](../sources/2026-04-30-spec-team-member-and-category.md)

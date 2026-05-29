@@ -2,8 +2,8 @@
 title: 문제 셋 라이프사이클
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md]
-updated: 2026-05-08
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md]
+updated: 2026-05-30
 ---
 
 # 문제 셋 라이프사이클
@@ -56,6 +56,14 @@ updated: 2026-05-08
 - 종료 시: 공개범위 설정(전체/그룹/비공개) → 확인 → 복습 화면.
 - 2026-05-04 회의에서는 자동 종료 엣지 케이스를 논의한 안대로 진행하기로 했지만, 상세 조건은 디스코드 스레드 원문 반영 전까지 미확정으로 남긴다.
 
+### 3-1. 개인 워크스페이스 학습 풀이 예외
+- 개인 워크스페이스는 실시간 모드를 제공하지 않고 학습/복습 모드만 제공한다.
+- 본인이 모든 문제 풀이를 완료하면 완료 상태로 변경한다.
+- 풀이 시작 및 종료 기능은 제외된다.
+- 따라서 위의 자동/수동 종료 규칙은 팀 학습모드 기준이며, 개인 워크스페이스에서는 별도 완료 처리로 본다.
+
+근거: [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md).
+
 ### 4. 복습
 - 실시간/학습 풀이가 끝난 문제 셋
 - 공개 범위 변경 가능 — [visibility-states](../decisions/visibility-states.md) 참조
@@ -103,5 +111,6 @@ updated: 2026-05-08
 - 진행 중 / 종료 후 문제셋 삭제 시 통계·플레이어 노출·대시보드 보존 정책
 - 학습모드가 개인 학습과 팀 스터디를 어떻게 함께 포괄하는지에 대한 상세 규칙
 - 학습모드 종료 이후 결과 재확인과 복습/대시보드 진입 흐름
+- 개인 워크스페이스 완료 상태 이후 복습 전환/공개 범위 설정 방식
 - 문제셋 삭제 후 관련 데이터가 목록/검색/대시보드/API에서 남아 보이지 않는지
 - 팀 삭제가 문제셋/문제 완전 삭제를 포함할 때 통계와 감사 로그를 어떻게 처리할지

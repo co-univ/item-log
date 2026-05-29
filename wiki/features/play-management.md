@@ -2,13 +2,13 @@
 title: 풀이관리 (maker 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md]
-updated: 2026-05-11
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md]
+updated: 2026-05-30
 ---
 
 # 풀이관리
 
-maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(실시간)** + **학습 모드** 두 갈래.
+maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(실시간)** + **학습 모드** 두 갈래. 단, 개인 워크스페이스는 실시간 모드와 풀이 시작/종료 기능이 제외된다.
 
 문제셋 라이프사이클은 [features/problem-set-lifecycle.md](./problem-set-lifecycle.md). player 뷰는 [features/play-player.md](./play-player.md).
 
@@ -75,6 +75,8 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 
 ## 학습 모드
 
+아래 규칙은 팀 워크스페이스 기준이다.
+
 ### 풀이 시작
 - "시작하기" 버튼 클릭으로 문제 활성화.
 
@@ -97,6 +99,15 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 2026-05-10 회의에서도 학습모드 대시보드 관련 API 검토와 학습모드에서 대시보드로 가는 동선이 후속 할 일로 다시 올라왔다.
 
 근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md).
+
+## 개인 워크스페이스 예외
+
+- 개인 워크스페이스의 문제 관리에서는 실시간 모드를 제외한다.
+- 풀이 시작 및 종료 기능도 제외한다.
+- 본인이 모든 문제 풀이를 완료하면 완료 상태로 변경한다.
+- 관리할 팀원이 없으므로, 팀 학습모드의 시작/종료/팀원 현황 중심 풀이관리와 동일하게 보지 않는다.
+
+명세는 `풀이관리` 탭명 자체의 노출 여부를 직접 쓰지는 않았다. 다만 개인 워크스페이스에서는 풀이관리의 핵심 액션인 시작/종료가 제외되므로, 탭이 남더라도 팀 학습모드와 같은 관리 화면은 아니다. 근거: [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md).
 
 ## 주간 회의에서 나온 후속 메모
 
@@ -128,6 +139,7 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 학습 모드 1.2/1.3은 "선착순과 동일"이라 적혀있지만 차이가 있을 수 있음 (검증 필요)
 - 학습모드 자동 종료 API/이벤트의 최종 구현 상태와 디스코드 스레드에 남은 엣지 케이스 상세
 - 학습모드 관리자뷰에서 팀원별 풀이 현황과 결과를 어디까지 보여줄지
+- 개인 워크스페이스에서 `풀이관리` 탭명을 숨길지, 문제 관리 안에서 시작/종료 기능만 제거할지
 - 실시간 중간 참여자에게 어떤 시점에 어떤 문구/토스트를 노출할지
 - 사이드바 자동 접힘 기준과 반응형 예외 규칙
 

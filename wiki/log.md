@@ -283,3 +283,49 @@ Confluence 5개 페이지 일괄 ingest:
   - index.md
 - 주요 반영: 카테고리/학습모드 문의 답변, 문제 생성 정보 입력 통합, 주제/제목 통합, 공개대상 선택 충돌 메모, 유형별 제출 현황 노출 기준 미결, 온보딩 개선, 카테고리 수정 UX와 신규 `MAIT-155`
 - 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest
+
+## [2026-05-30] ingest | 2026-05-10-spec-personal-workspace
+
+- Confluence 페이지 `122519555`를 `raw/2026-05-10-spec-personal-workspace.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-10-spec-personal-workspace.md
+  - features/personal-workspace.md
+- 기존 페이지 갱신:
+  - features/navigation-and-guidance.md
+  - features/problem-set-creation.md
+  - features/problem-set-lifecycle.md
+  - features/play-management.md
+  - features/play-player.md
+  - features/result-dashboard.md
+  - features/category-management.md
+  - features/team-member-management.md
+  - decisions/permission-roles.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 개인 워크스페이스 자동 생성/진입, maker 취급, 실시간 모드 제외, 풀이 시작/종료 기능 제외, 랭킹 제외 대시보드, 카테고리 관리 명칭과 멤버관리 비활성화
+
+## [2026-05-30] ingest | 2026-04-30-spec-team-member-and-category
+
+- Confluence 페이지 `44433411` v7을 `raw/2026-04-30-spec-team-member-and-category.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-04-30-spec-team-member-and-category.md
+- 기존 페이지 갱신:
+  - features/team-member-management.md
+  - features/team-invitation.md
+  - features/category-management.md
+  - decisions/permission-roles.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: maker/player 2컬럼 권한관리, owner 삭제 불가, 직접 계정 추가, 초대 링크 생성/관리, maker 승인 선택 가능/player 자동 승인, 카테고리 복구/삭제 규칙 최신 source 연결
+
+## [2026-05-30] ingest | 2026-05-26-spec-result-dashboard
+
+- Confluence 페이지 `54493186` v7을 `raw/2026-05-26-spec-result-dashboard.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-26-spec-result-dashboard.md
+- 기존 페이지 갱신:
+  - features/result-dashboard.md
+  - decisions/score-calculation.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 메인 `우리팀 랭킹`이 실시간/학습 모드를 모두 포함하며 학습 모드는 정답수 기준 순위로 집계된다는 최신 명세 반영, 전체 문제 수 기준 점수 산정 재확인, 카테고리별 정답률의 주제 태그 표현 충돌 메모 유지

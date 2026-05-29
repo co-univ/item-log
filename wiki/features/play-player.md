@@ -2,13 +2,13 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
-updated: 2026-05-19
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-30
 ---
 
 # 문제 풀기 (player 측)
 
-player가 보는 풀이 화면. 실시간 / 학습 / 복습 3가지 모드.
+player가 보는 풀이 화면. 팀 워크스페이스는 실시간 / 학습 / 복습 3가지 모드를 다루고, 개인 워크스페이스는 학습 / 복습 모드만 제공한다.
 
 maker 측 대응 화면은 [풀이관리](./play-management.md). 정답 표시 정책은 [decisions/scoring-display.md](../decisions/scoring-display.md).
 
@@ -65,6 +65,8 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 ## 2. 학습 모드
 
 학습 모드는 실시간 풀이 종료 후 자동 복사되는 상태가 아니라, 문제셋 생성 시 선택하는 별도 풀이 방식이다. 팀 단위 과제처럼 기간을 두고 팀원 각자가 가능한 시간에 풀며, 문제셋을 한 번에 풀고 제출하면 채점된다. 실시간 모드와 학습 모드에서 풀이 완료된 문제셋은 maker가 복습 모드로 넘길 수 있다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+
+개인 워크스페이스에서도 문제 풀기는 학습 모드와 복습 모드만 제공한다. 실시간 풀이 기능은 제외되고, 본인이 모든 문제 풀이를 완료하면 완료 상태로 바뀐다. [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md)
 
 ### 문제셋별 상태 (4/11 추가)
 
@@ -165,6 +167,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 등수정보/제출현황을 정답자·오답자·미풀이자에게 어디까지 다르게 보여줄지, 제출 답안 목록의 유형별 데이터와 이모지 리액션을 어떻게 제공할지
 - 유형별 제출 현황에서 퍼센트/개수 텍스트 노출 기준과 작은 비율 영역 처리
 - 학습모드 완료 결과 재확인과 채점 이후 화면의 최종 동선
+- 개인 워크스페이스 학습 완료 후 복습/대시보드 진입 방식
 - 복습 모드 동선 수정의 최종 상세
 
 ## 출처

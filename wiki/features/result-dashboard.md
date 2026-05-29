@@ -2,8 +2,8 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
-updated: 2026-05-19
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+updated: 2026-05-30
 ---
 
 # 풀이결과 대시보드
@@ -24,11 +24,15 @@ updated: 2026-05-19
 
 | 항목 | 값 |
 |---|---|
-| 집계 범위 | **실시간 모드만** (학습 모드 제외) |
+| 집계 범위 | 실시간/학습 모드 모두 포함 |
 | 기준 | 선착순 / 정답수 — 탭 전환 |
+| 실시간 모드 | 전체 득점자 순위 |
+| 학습 모드 | 정답수 기준 순위 |
 | 노출 등수 | 1~3등 (디자인 따라 5등까지 가능) |
 | 표시 | 이름 + 닉네임 |
 | 내 등수 | 등수 무관 항상 노출 |
+
+2026-05-26 Confluence v7 명세에서 메인 전체 랭킹은 실시간 모드와 학습 모드를 모두 포함하는 것으로 갱신됐다. 이전 source의 `실시간 모드만` 메모는 이 최신 명세로 대체한다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
 
 ### 1.2 개인 정답률 원그래프
 
@@ -36,11 +40,19 @@ updated: 2026-05-19
 - 그 중 맞은 문제 수
 - 위 두 값 기반 개인 정답률 → 원그래프
 
+### 개인 워크스페이스 예외
+
+- 랭킹 영역은 제외한다.
+- 정답률 영역을 상단에 배치한다.
+
+근거: [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md).
+
 ### 1.3 카테고리별 정답률 바
 
 - 기존 대시보드 명세는 카테고리를 **문제셋의 주제 태그**로 설명했지만, 2026-05-14 회의에서는 주제를 제목과 통합하고 카테고리는 별도 분류 태그로 설명했다. 따라서 이 지표의 집계 필드는 재확인이 필요하다.
 - 카테고리별 정답률을 바그래프
 - **상위 8개**만 default 노출, 나머지는 "더보기" 토글
+- 2026-05-26 Confluence v7 명세도 카테고리를 `문제셋의 주제 태그`로 설명하므로, 2026-05-14 회의의 주제/카테고리 분리 논의와 여전히 정합성 확인이 필요하다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
 
 ### 1.4 문제셋 카드 (상세 진입점)
 
@@ -92,6 +104,7 @@ updated: 2026-05-19
 - 2026-05-04 회의에서는 학습모드 종료 이후 결과를 다시 보는 플로우와 풀이관리에서 팀원별 풀이 현황/결과를 보여줄 필요가 제기됐고, 백엔드 할 일에 학습모드 대시보드 관련 API가 남았다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 학습모드에서 대시보드로 가는 동선과 학습모드 대시보드 관련 API 검토가 다시 할 일로 올라왔다. 기존 `MAIT-133`에서 이어서 추적한다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-14 회의에서는 다음 배포의 풀이결과 대시보드 2차 작업을 기존 `MAIT-147`로 재사용하기로 했다. 카테고리별 정답률 통계, 문제셋별 오답률 통계와 추가 통계가 범위로 언급됐고, 실시간은 득점자 관련 통계, 학습모드는 본인 점수 중심으로 나뉘었다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+- 2026-05-26 Confluence v7 명세에서는 메인 전체 랭킹이 실시간/학습 모드를 모두 포함하고, 학습 모드는 정답수 기준 순위로 집계된다고 업데이트됐다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
 
 ## 관련
 
@@ -101,8 +114,9 @@ updated: 2026-05-19
 
 ## 미해결
 
-- 학습 모드 결과의 전체 종합 위치 (메인 랭킹은 실시간 전용)
+- 2026-05-14 회의의 `학습모드는 본인 점수 중심` 메모와 2026-05-26 명세의 `학습 모드 → 정답수 기준 순위` 사이의 정합성
 - 학습모드 완료 후 결과 재확인 플로우와 관리자뷰/대시보드 API의 경계
+- 개인 워크스페이스 대시보드의 상세 진입점과 학습 완료 후 이동 방식
 - 카테고리별 정답률의 집계 기준이 `주제 태그`인지 `카테고리`인지
 - "내 정답률 vs 전체 평균"의 평균 단위 (팀 / 서비스 전체)
 - 우승자 화면 자체의 본 명세 누락
@@ -111,3 +125,4 @@ updated: 2026-05-19
 ## 출처
 
 - [sources/2026-01-28-spec-result-dashboard.md](../sources/2026-01-28-spec-result-dashboard.md)
+- [sources/2026-05-26-spec-result-dashboard.md](../sources/2026-05-26-spec-result-dashboard.md)
