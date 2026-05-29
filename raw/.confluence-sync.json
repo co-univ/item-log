@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "cloud_id": "https://youthing.atlassian.net",
+  "folder_id": "20185111",
+  "updated_at": "2026-05-30T00:36:33+09:00",
+  "pages": {
+    "65437698": {
+      "title": "(player뷰) 문제 풀기",
+      "version": 15,
+      "version_created_at": "2026-04-11T01:17:29.733Z",
+      "raw_path": "raw/2026-04-11-spec-player-view-play.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/65437698",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "54493186": {
+      "title": "풀이결과 대시보드",
+      "version": 7,
+      "version_created_at": "2026-05-26T14:00:28.324Z",
+      "raw_path": "raw/2026-05-26-spec-result-dashboard.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/54493186",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "44433411": {
+      "title": "팀관리 - 멤버관리, 카테고리 관리",
+      "version": 7,
+      "version_created_at": "2026-04-30T13:15:13.400Z",
+      "raw_path": "raw/2026-04-30-spec-team-member-and-category.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/44433411",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "35225603": {
+      "title": "문제관리_풀이관리",
+      "version": 15,
+      "version_created_at": "2026-04-11T01:11:39.598Z",
+      "raw_path": "raw/2026-04-11-spec-play-management.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/35225603",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "29818898": {
+      "title": "로그인/회원가입/마이페이지",
+      "version": 4,
+      "version_created_at": "2025-10-24T14:12:56.527Z",
+      "raw_path": "raw/2025-10-24-spec-auth-mypage.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/29818898",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "24772643": {
+      "title": "문제 검색",
+      "version": 9,
+      "version_created_at": "2025-12-17T14:32:49.839Z",
+      "raw_path": "raw/2025-12-17-spec-problem-search.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/24772643",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "20217857": {
+      "title": "문제관리_문제생성",
+      "version": 31,
+      "version_created_at": "2026-04-14T13:01:36.934Z",
+      "raw_path": "raw/2026-04-14-spec-problem-management.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/20217857",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    },
+    "122519555": {
+      "title": "개인 워크스페이스",
+      "version": 4,
+      "version_created_at": "2026-05-10T12:24:59.407Z",
+      "raw_path": "raw/2026-05-10-spec-personal-workspace.md",
+      "source_url": "https://youthing.atlassian.net/wiki/spaces/~712020e8812b2eb985491caedb51d1b356e362/pages/122519555",
+      "last_synced_at": "2026-05-30T00:36:33+09:00"
+    }
+  }
+}
