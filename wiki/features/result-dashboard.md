@@ -2,7 +2,7 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
 updated: 2026-05-30
 ---
 
@@ -78,6 +78,7 @@ updated: 2026-05-30
 - 오답률 높은 질문 1~3위.
 - 표시: 질문 / 오답률 / `문제 확인하기` 버튼.
 - 클릭 시 2.4의 해당 문제로 이동.
+- 2026-05-26 회의에서 오답률 산식은 `최초 제출 시 오답인 유저 / 해당 문제 제출 유저 수 * 100`으로 정리됐고, 소수 둘째 자리에서 반올림한다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ### 2.3 점수
 
@@ -105,6 +106,8 @@ updated: 2026-05-30
 - 2026-05-10 회의에서는 학습모드에서 대시보드로 가는 동선과 학습모드 대시보드 관련 API 검토가 다시 할 일로 올라왔다. 기존 `MAIT-133`에서 이어서 추적한다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-14 회의에서는 다음 배포의 풀이결과 대시보드 2차 작업을 기존 `MAIT-147`로 재사용하기로 했다. 카테고리별 정답률 통계, 문제셋별 오답률 통계와 추가 통계가 범위로 언급됐고, 실시간은 득점자 관련 통계, 학습모드는 본인 점수 중심으로 나뉘었다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 - 2026-05-26 Confluence v7 명세에서는 메인 전체 랭킹이 실시간/학습 모드를 모두 포함하고, 학습 모드는 정답수 기준 순위로 집계된다고 업데이트됐다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
+- 2026-05-26 주간 회의에서는 player가 풀이를 완료했지만 모든 팀원이 풀지 않았거나 관리자가 학습모드 문제셋을 종료하지 않은 상태여도 상세 대시보드를 볼 수 있다고 정리했다. 이때 오답률만 실시간으로 업데이트되며, 실시간/학습모드 player의 `풀이 완료` 상태에는 `통계확인` 버튼을 추가해야 한다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 같은 회의에서 풀이결과 대시보드 2차 범위는 기존 `MAIT-147`에 연결했고, 오답률 산식/본인 기준 카테고리별 정답률/본인 문제셋별 풀이기록/문제셋별 오답률을 함께 확인했다. 종료된 문제셋의 maker/player별 정보 노출 정책은 신규 `MAIT-156`으로 분리됐다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 관련
 
@@ -121,8 +124,11 @@ updated: 2026-05-30
 - "내 정답률 vs 전체 평균"의 평균 단위 (팀 / 서비스 전체)
 - 우승자 화면 자체의 본 명세 누락
 - 문제셋별 오답률 통계의 `+ a` 범위와 실시간/학습 통계 분기 기준
+- 완료한 player의 상세 대시보드 조회 가능 시점과 maker/player별 종료 후 정보 노출 범위
+- 오답률 분모에서 미제출자를 별도 지표로 다룰지 여부
 
 ## 출처
 
 - [sources/2026-01-28-spec-result-dashboard.md](../sources/2026-01-28-spec-result-dashboard.md)
 - [sources/2026-05-26-spec-result-dashboard.md](../sources/2026-05-26-spec-result-dashboard.md)
+- [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)

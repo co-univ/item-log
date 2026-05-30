@@ -2,7 +2,7 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
 updated: 2026-05-30
 ---
 
@@ -96,6 +96,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 풀이 완료 상태로 전환, "통계확인" 버튼으로 변경.
 - **정/오답 + 풀이 모두 한꺼번에 노출** (해설 즉시 노출, 복습과 다름).
 - **재풀이 불가**.
+- 2026-05-26 회의에서는 player 본인이 풀이 완료 상태라면 아직 모든 팀원이 풀지 않았거나 관리자가 학습모드 문제셋을 종료하지 않았어도 상세 대시보드를 볼 수 있다고 정리했다. 이 경우 오답률만 실시간 업데이트된다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ### 2.4 자동저장
 
@@ -113,6 +114,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 같은 회의에서 복습 모드 동선 수정도 프론트 후속 항목으로 남았다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 학습모드 완료 후 나가는 동선, 나가면 결과를 다시 볼 수 없다고 오해할 가능성, 완료 결과 재확인 플로우, 채점 이후 디자인이 배포 후 개선 후보로 제기됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 학습모드와 복습모드 모두 문제풀이 뷰에 별도 나가기 버튼이나 브레드크럼을 두지 않아도 된다는 의견이 정리됐다. 페이지 이동은 기존 LNB와 NavBar로 충분하다고 보며, 학습모드 대시보드 진입은 별도 동선으로 검토한다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
+- 2026-05-26 회의에서는 실시간/학습모드 player의 `풀이 완료` 상태에 `통계확인` 버튼을 추가하는 것이 피그마 후속으로 남았다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 3. 복습 모드
 
@@ -153,6 +155,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 2026-03-22 회의에서는 진출자/우승자 워딩, 중간 참여 처리, 반응형, 이름 길이 처리 같은 플레이어 화면 표현 문제가 함께 논의됐다. [2026-03-22 주간 회의록](../sources/2026-03-22-weekly-meeting.md)
 - 2026-01-03 회의에서는 복습에서 맞고 틀림을 알기 어렵고 완료된 문제셋 확인이 불편하다는 운영 피드백이 다시 확인됐다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)
 - 2026-04-19 회의에서는 등수정보/제출현황을 player 화면에 어떻게 노출할지 다시 논의됐고, 2026-04-26 회의에서는 학습모드와 복습모드 동선이 배포 후속으로 남았다. 2026-05-04 회의에서는 `몇 초 늦었습니다`, 실시간 참여 인원, 이모지, 제출 답안 목록이 후속 작업으로 더 구체화됐고, 2026-05-10 회의에서는 유형별 제출 답안 현황 UI 후보와 별도 나가기 버튼 미사용 방향이 정리됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
+- 2026-05-26 회의에서는 등수정보 노출 기준을 백엔드 실제 데이터 기반으로 재논의하기로 했다. 기본 방향은 정답률 비례와 최대 영역 40%지만, 상위 N개 안에 정답이 없는 경우와 객관식 복수정답 그룹화는 추가 명세가 필요하다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 관련
 
@@ -169,7 +172,9 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 학습모드 완료 결과 재확인과 채점 이후 화면의 최종 동선
 - 개인 워크스페이스 학습 완료 후 복습/대시보드 진입 방식
 - 복습 모드 동선 수정의 최종 상세
+- player가 풀이 완료 후 상세 대시보드를 볼 때, 오답률 외 어떤 데이터가 즉시 확정값인지.
 
 ## 출처
 
 - [sources/2026-04-11-spec-player-view-play.md](../sources/2026-04-11-spec-player-view-play.md)
+- [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)

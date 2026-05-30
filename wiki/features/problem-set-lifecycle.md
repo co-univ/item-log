@@ -2,7 +2,7 @@
 title: 문제 셋 라이프사이클
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md]
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-26-weekly-meeting.md]
 updated: 2026-05-30
 ---
 
@@ -55,6 +55,7 @@ updated: 2026-05-30
 - **수동 종료**도 가능. 마지막 문제에서 "다음문제" → "종료하기"로 변경.
 - 종료 시: 공개범위 설정(전체/그룹/비공개) → 확인 → 복습 화면.
 - 2026-05-04 회의에서는 자동 종료 엣지 케이스를 논의한 안대로 진행하기로 했지만, 상세 조건은 디스코드 스레드 원문 반영 전까지 미확정으로 남긴다.
+- 2026-05-26 회의에서는 player가 풀이를 완료했지만 모든 팀원이 풀지 않았거나 관리자가 학습모드 문제셋을 종료하지 않은 상태에서도 상세 대시보드를 볼 수 있다고 정리했다. 이때 오답률만 실시간 업데이트된다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ### 3-1. 개인 워크스페이스 학습 풀이 예외
 - 개인 워크스페이스는 실시간 모드를 제공하지 않고 학습/복습 모드만 제공한다.
@@ -69,6 +70,7 @@ updated: 2026-05-30
 - 공개 범위 변경 가능 — [visibility-states](../decisions/visibility-states.md) 참조
 - 검색 가능한 유일한 상태 — [problem-search](./problem-search.md) 참조
 - 복습 셋은 문제 수정·풀이관리 버튼 불필요 (자유 노트, 12/10)
+- 2026-05-26 회의에서는 복습모드 전환 후 문제별 제출자 목록을 볼 수 없다는 사용자 문의를 계기로, 종료된 문제셋의 maker/player별 정보 노출 기준을 별도 후속으로 분리했다. 신규 `MAIT-156`에서 추적한다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 모든 섹션 공통 동작
 
@@ -93,6 +95,7 @@ updated: 2026-05-30
 - 2026-03-29 회의에서는 학습모드를 실시간모드의 단순 변형이 아니라 개인 학습과 팀 스터디를 함께 담는 더 넓은 흐름으로 봐야 한다는 의견도 나왔다. [2026-03-29 주간 회의록](../sources/2026-03-29-weekly-meeting.md)
 - 2026-01-11과 2026-01-03 회의에서는 비공개 문제셋 접근, 복습 해설, 완료된 문제셋 재확인성, 재채점처럼 상태 전환 이후 규칙이 사용자 경험에 직접 영향을 주는 이슈가 지속적으로 보고됐다. [2026-01-11 주간 회의록](../sources/2026-01-11-weekly-meeting.md), [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)
 - 2026-04-19과 2026-04-26 회의에서는 팀 삭제/문제셋 삭제의 데이터 처리와 학습모드 후속 작업이 배포 전후 확인 항목으로 남았다. 2026-05-04 회의에서는 학습모드 완료 후 결과를 다시 보는 흐름과 대시보드 API가 추가 개선 후보로 올라왔다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
+- 2026-05-26 회의에서는 완료한 player의 상세 대시보드 조회 가능 시점과 종료된 문제셋의 maker/player별 사후 조회 정책이 함께 논의됐다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 디자인 todo
 
@@ -112,5 +115,6 @@ updated: 2026-05-30
 - 학습모드가 개인 학습과 팀 스터디를 어떻게 함께 포괄하는지에 대한 상세 규칙
 - 학습모드 종료 이후 결과 재확인과 복습/대시보드 진입 흐름
 - 개인 워크스페이스 완료 상태 이후 복습 전환/공개 범위 설정 방식
+- 종료된 문제셋의 maker/player 사후 조회 권한과 복습 상태의 풀이관리 진입 여부
 - 문제셋 삭제 후 관련 데이터가 목록/검색/대시보드/API에서 남아 보이지 않는지
 - 팀 삭제가 문제셋/문제 완전 삭제를 포함할 때 통계와 감사 로그를 어떻게 처리할지

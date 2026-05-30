@@ -329,3 +329,22 @@ Confluence 5개 페이지 일괄 ingest:
   - glossary/core-terms.md
   - index.md
 - 주요 반영: 메인 `우리팀 랭킹`이 실시간/학습 모드를 모두 포함하며 학습 모드는 정답수 기준 순위로 집계된다는 최신 명세 반영, 전체 문제 수 기준 점수 산정 재확인, 카테고리별 정답률의 주제 태그 표현 충돌 메모 유지
+
+## [2026-05-30] ingest | 2026-05-26-weekly-meeting
+
+- Notion 페이지 `36887d59-2b6e-80cf-a427-c22f1d61f921`를 `raw/2026-05-26-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-26-weekly-meeting.md
+- 기존 페이지 갱신:
+  - features/personal-workspace.md
+  - features/result-dashboard.md
+  - features/play-player.md
+  - features/play-management.md
+  - features/problem-set-lifecycle.md
+  - features/problem-set-creation.md
+  - features/category-management.md
+  - features/user-notifications.md
+  - features/team-exit-and-deletion.md
+  - index.md
+- 주요 반영: 6/2 배포/6/16 알림 후속, 개인 워크스페이스 배포 체크, 종료된 문제셋 maker/player 노출 정책과 신규 `MAIT-156`, 문제 카드 UI 신규 `MAIT-157`, 오답률 산식, 등수정보 데이터 기반 재논의
+- 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest

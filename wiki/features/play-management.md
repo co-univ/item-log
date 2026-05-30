@@ -2,7 +2,7 @@
 title: 풀이관리 (maker 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md]
+sources: [raw/2026-04-11-spec-play-management.md, raw/2025-10-01-weekly-meeting.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-07-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-26-weekly-meeting.md]
 updated: 2026-05-30
 ---
 
@@ -97,8 +97,9 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 학습모드 배포 이후에는 풀이관리에서 현재 팀원들의 풀이 현황과 결과를 보여줘야 하는지 검토하기로 했다.
 - 백엔드 할 일에는 학습모드 대시보드 관련 API가 별도 항목으로 남았다.
 - 2026-05-10 회의에서도 학습모드 대시보드 관련 API 검토와 학습모드에서 대시보드로 가는 동선이 후속 할 일로 다시 올라왔다.
+- 2026-05-26 회의에서는 복습모드 전환 후 문제별 제출자 목록을 볼 수 없다는 사용자 문의가 있었다. 후속으로 종료된 문제셋에서 maker/player별로 어떤 화면과 정보를 노출할지 정리하고, 신규 `MAIT-156`에서 추적한다.
 
-근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md).
+근거: [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md), [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md).
 
 ## 개인 워크스페이스 예외
 
@@ -125,6 +126,7 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 2026-04-26 회의에서는 학습모드 관리 API와 프론트 학습모드 화면이 배포 후속 작업으로 이어졌고, 자동 종료와 제출/채점이 남은 항목으로 기록됐다. [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md)
 - 2026-05-04 회의에서는 학습모드 자동 종료 엣지 케이스를 논의한 안대로 진행하기로 했고, 관리자뷰/대시보드 API 개선은 배포 이후 고려 항목으로 남겼다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 학습모드 대시보드 관련 API와 대시보드 이동 동선 검토가 기존 `MAIT-133` 흐름에서 다시 확인됐다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
+- 2026-05-26 회의에서는 `풀기`와 `관리`가 같은 디자인일 필요는 없고, 관리 쪽은 기능이 늘어 복잡해졌다는 의견이 나왔다. 복습에서도 풀이관리를 볼 수 있을지, `문제관리`를 `팀관리` 하위로 옮길지 역시 후속 논의로 남았다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 관련
 
@@ -139,6 +141,7 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 - 학습 모드 1.2/1.3은 "선착순과 동일"이라 적혀있지만 차이가 있을 수 있음 (검증 필요)
 - 학습모드 자동 종료 API/이벤트의 최종 구현 상태와 디스코드 스레드에 남은 엣지 케이스 상세
 - 학습모드 관리자뷰에서 팀원별 풀이 현황과 결과를 어디까지 보여줄지
+- 종료된 문제셋에서 maker/player별로 문제별 제출자, 참여율, 결과 정보를 어디까지 사후 조회하게 할지
 - 개인 워크스페이스에서 `풀이관리` 탭명을 숨길지, 문제 관리 안에서 시작/종료 기능만 제거할지
 - 실시간 중간 참여자에게 어떤 시점에 어떤 문구/토스트를 노출할지
 - 사이드바 자동 접힘 기준과 반응형 예외 규칙
@@ -146,3 +149,4 @@ maker가 진행 중인 풀이 세션을 제어하는 화면. **선착순 모드(
 ## 출처
 
 - [sources/2026-04-11-spec-play-management.md](../sources/2026-04-11-spec-play-management.md)
+- [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)

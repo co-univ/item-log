@@ -2,7 +2,7 @@
 title: 개인 워크스페이스
 type: feature
 status: draft
-sources: [raw/2026-05-10-spec-personal-workspace.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md]
+sources: [raw/2026-05-10-spec-personal-workspace.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
 updated: 2026-05-30
 ---
 
@@ -53,6 +53,7 @@ updated: 2026-05-30
 - 2026-05-04 회의에서는 5월 12일 배포 후보로 개인 워크스페이스가 포함됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 개인 워크스페이스 명세서 링크가 기획 회의 항목으로 공유됐다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-14 회의에서는 다음 배포 범위를 기존 Jira 이슈 재사용 원칙으로 정리하면서 개인 워크스페이스를 기존 활성 이슈와 연결하기로 했다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
+- 2026-05-26 회의에서는 회원 가입 시 자동 생성, 기존 유저 자동 생성, 실시간 모드 문제셋 생성 차단, 초대링크 생성 차단이 완료 체크됐다. 백엔드 할 일에서도 팀명 수정 API 확인, 마이그레이션 잡, 기본 생성 워크스페이스 닉네임 기준 변경이 완료 체크됐고, 기존 `MAIT-106`에 회의 후속을 연결했다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 
 ## 관련
 
@@ -68,3 +69,4 @@ updated: 2026-05-30
 - 최근 방문 팀 저장 기준과 개인 워크스페이스 포함 여부.
 - 개인 워크스페이스에서 `풀이관리` 탭명을 UI에서 숨길지, 기존 문제 관리 UI 안에서 시작/종료 액션만 제거할지.
 - 완료 상태 이후 복습 전환/공개 범위 설정을 팀 학습모드와 동일하게 볼지.
+- 기본 생성 워크스페이스 명칭을 닉네임 기준으로 바꾸는 정책이 기존 팀명/워크스페이스명 수정 API와 충돌하지 않는지.
