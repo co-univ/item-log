@@ -2,8 +2,8 @@
 title: 카테고리 관리
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
-updated: 2026-05-30
+sources: [raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2026-04-14-spec-problem-management.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
+updated: 2026-06-03
 ---
 
 # 카테고리 관리
@@ -26,6 +26,7 @@ updated: 2026-05-30
 - 2026-05-14 사용자 문의에서는 카테고리를 팀별로 자유롭게 세팅하는 해시태그/공통 범위 개념으로 설명했다. 코테이토 교육팀 예시로는 `#운영체제`, `#객체지향` 같은 과목명을 넣는 사용 방식이 언급됐고, 나중에는 카테고리 선택으로 관련 문제셋을 모아보는 방향도 가능하다고 답했다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 - 2026-04-30 Confluence v7 명세는 카테고리명 중복 불가, 삭제된 동일 이름 카테고리 복구 모달, 기존 문제셋/대시보드 영향 없음, 신규 생성 후보 제외, 40자 제한을 다시 확인한다. [2026-04-30 팀관리 명세서](../sources/2026-04-30-spec-team-member-and-category.md)
 - 2026-05-26 회의에서는 문제 카드 UI 개선 논의 중 카테고리 값을 현재 문제 카드에 노출하지 않는 방향으로 다시 확인했다. 다만 UI 개선 시점에는 카테고리 노출을 함께 재검토할 수 있고, 카테고리 UI 수정은 기존 `MAIT-155` 후속으로 연결했다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 2026-05-31 회의에서는 대시보드/카테고리 표현에서 두 영역으로 보이던 카테고리/세부 과목을 실제 데이터 기준 `카테고리 이름` 하나로 합치고, 클릭 시 별도 이동은 하지 않는 것으로 확인했다. 카테고리 관리 버튼은 체크/취소 또는 취소/저장 상태 표현을 계속 맞춰야 한다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
 ## 1.1 카테고리 추가
 
@@ -60,6 +61,7 @@ updated: 2026-05-30
 - 취소 동작을 위해 체크/엑스 형태를 둔다.
 - 목록은 한 번에 하나씩 다루고, 최근 추가 항목은 아래로 정렬하는 방향이다.
 - 이 후속은 신규 `MAIT-155`로 생성됐다.
+- 2026-05-31 회의에서도 체크/취소, 체크/엑스, 취소/저장 상태가 다시 언급됐다. 최종 표현은 디자인/프론트가 맞춰야 한다.
 
 근거: [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md).
 
@@ -74,7 +76,7 @@ updated: 2026-05-30
 - 카테고리명 40자 제한을 한글/영문/공백/특수문자에서 어떻게 계산할지
 - 40자 초과 시 입력 차단인지 초과 허용+경고인지, 그리고 경고 문구의 최종 문안
 - 문제셋 목록/문제 카드에 카테고리 값을 노출할지, 노출한다면 어떤 카드 UI 개선과 함께 처리할지
-- 카테고리 기반 문제셋 모아보기의 실제 제공 여부와 진입점
+- 카테고리 기반 문제셋 모아보기의 실제 제공 여부와 진입점. 단, 2026-05-31 회의에서 대시보드 카테고리 영역 클릭 이동은 하지 않는 것으로 확인됐다.
 - 개인 워크스페이스 카테고리와 팀 카테고리의 데이터 분리/이관 기준
 - 상태 기반 문제 카드 UI로 개편할 때 카테고리 값을 계속 미노출할지, 필터/검색/모아보기에서만 사용할지.
 
@@ -92,3 +94,4 @@ updated: 2026-05-30
 - [sources/2026-05-10-weekly-meeting.md](../sources/2026-05-10-weekly-meeting.md)
 - [sources/2026-05-14-weekly-meeting.md](../sources/2026-05-14-weekly-meeting.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
+- [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)

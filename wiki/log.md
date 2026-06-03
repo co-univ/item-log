@@ -348,3 +348,20 @@ Confluence 5개 페이지 일괄 ingest:
   - index.md
 - 주요 반영: 6/2 배포/6/16 알림 후속, 개인 워크스페이스 배포 체크, 종료된 문제셋 maker/player 노출 정책과 신규 `MAIT-156`, 문제 카드 UI 신규 `MAIT-157`, 오답률 산식, 등수정보 데이터 기반 재논의
 - 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest
+
+## [2026-06-03] ingest | 2026-05-31-weekly-meeting
+
+- Notion 페이지 `37087d59-2b6e-80fc-ba5e-f933db8d5186`를 `raw/2026-05-31-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-05-31-weekly-meeting.md
+- 기존 페이지 갱신:
+  - features/result-dashboard.md
+  - features/personal-workspace.md
+  - features/play-player.md
+  - features/category-management.md
+  - features/navigation-and-guidance.md
+  - features/problem-set-creation.md
+  - index.md
+- 주요 반영: 학습모드 우승자 미노출, 사용자가 풀지 않은 문제셋의 대시보드 표시 방식, 득점자 우선 정답 통계 기준, 개인 워크스페이스 자동 종료/통계 전환, 카테고리 영역 단일화, 실시간 등수 플로팅 버튼 논의, 온보딩/문제입력 UI 후속
+- Jira 신규 생성 없이 기존 `MAIT-147`, `MAIT-149`, `MAIT-155`, `MAIT-85`, `MAIT-141`, `MAIT-157`, `MAIT-106`에 회의 후속 코멘트 추가
+- 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest

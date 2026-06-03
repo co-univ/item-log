@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
-updated: 2026-05-30
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
+updated: 2026-06-03
 ---
 
 # 문제셋 생성 플로우
@@ -21,6 +21,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - "문제 수정" 클릭 → 3단계(질문 편집)로 직진.
 - 디자인 변경: 한 행당 셋 3개, 제목 길면 말줄임표 + 툴팁, 필터 삭제.
 - 2026-05-26 회의에서는 문제 카드 UI를 상태 기반 칸반 형태로 보고, 카드에는 제목/날짜 중심 정보만 남기며 더보기 메뉴에 액션을 모으는 안이 논의됐다. 카테고리는 현재 카드에 노출하지 않는 방향이지만 UI 개선 시 재검토할 수 있고, 신규 `MAIT-157`에서 후속 정리한다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 2026-05-31 회의에서도 문제카드 UI 개선 고민은 계속 진행 중인 기획 후속으로 확인됐다. 별도 신규 결정은 아니며 기존 `MAIT-157`에서 이어서 추적한다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
 ### 2단계 — 문제 정보 입력
 
@@ -53,6 +54,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 2026-05-10 회의에서는 문제 정보 입력 화면과 문제셋 생성 시 정보 입력 화면을 통일하는 방향이 정리됐다. 학습모드/실시간모드 선택은 초기 화면 앞쪽에 배치하고, 자료 업로드나 보충 설명처럼 보여야 하지만 수정하면 안 되는 필드는 읽기 전용으로 노출해야 한다. 이 후속은 `MAIT-141`로 생성됐다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-14 회의에서는 통일된 문제 생성 화면을 기존 `MAIT-154` 범위로 재사용하기로 했다. 주제는 제목과 통합하고, 문제 풀이 대상 필드는 보충 설명에 흡수하며, AI 생성/직접 제작/공개대상/풀이방식은 디폴트 선택 없이 직접 선택하는 방향이 논의됐다. 공개대상 직접 선택은 기존 공개범위 결정과 충돌 가능성이 있어 [공개 범위 정책](../decisions/visibility-states.md)에 별도 표시했다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 - 2026-05-26 회의에서는 `문제관리`를 `팀관리` 하위로 넣는 안이 논의됐지만, 관리자 메뉴를 모으는 장점과 팀관리 하위 개념으로 보기 어렵다는 반대 의견이 함께 남았다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 2026-05-31 회의에서는 디자인 파트 후속으로 `문제입력 통일 UI`가 남아 있음을 확인했고, 기존 `MAIT-141`에 회의 코멘트를 추가했다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
 ### 3단계 — 질문 편집 → 생성하기
 
@@ -107,3 +109,4 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - [sources/2026-05-10-weekly-meeting.md](../sources/2026-05-10-weekly-meeting.md)
 - [sources/2026-05-14-weekly-meeting.md](../sources/2026-05-14-weekly-meeting.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
+- [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)

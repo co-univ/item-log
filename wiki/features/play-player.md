@@ -2,8 +2,8 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
-updated: 2026-05-30
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
+updated: 2026-06-03
 ---
 
 # 문제 풀기 (player 측)
@@ -62,11 +62,15 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 2026-05-14 회의에서는 유형별 제출 현황 구조가 피그마에서 확정됐지만, 퍼센트 바가 90:10처럼 작게 나뉘는 경우 10% 영역에 텍스트를 넣기 어렵다는 문제가 남았다. 퍼센트와 개수 노출 기준은 기획/디자인이 추가로 정해야 한다. 같은 회의에서 `MAIT-148`의 다음 작업으로 제출한 유저와 몇 초 차이나는지, 실시간 참여 인원 카운트 UI가 다시 확인됐다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
+2026-05-31 회의에서는 참여자 수가 계속 떠 있는 전제에서 문제 영역과 겹치는 문제가 다시 확인됐다. 대안으로 플로팅 버튼을 두고 참여 인원 수, 참여자 닉네임, 이모지를 함께 노출하는 방향이 논의됐으며, 버튼명에 숫자를 넣거나 사람 아이콘을 쓰는 안도 언급됐다. 텍스트와 숫자 조합은 영역이 커져 선지를 가릴 수 있다는 우려가 남았다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+
 ## 2. 학습 모드
 
 학습 모드는 실시간 풀이 종료 후 자동 복사되는 상태가 아니라, 문제셋 생성 시 선택하는 별도 풀이 방식이다. 팀 단위 과제처럼 기간을 두고 팀원 각자가 가능한 시간에 풀며, 문제셋을 한 번에 풀고 제출하면 채점된다. 실시간 모드와 학습 모드에서 풀이 완료된 문제셋은 maker가 복습 모드로 넘길 수 있다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
 개인 워크스페이스에서도 문제 풀기는 학습 모드와 복습 모드만 제공한다. 실시간 풀이 기능은 제외되고, 본인이 모든 문제 풀이를 완료하면 완료 상태로 바뀐다. [개인 워크스페이스 명세서](../sources/2026-05-10-spec-personal-workspace.md)
+
+개인 워크스페이스에서는 풀이 시작/종료 기능이 없지만 문제 풀이 완료에 따른 자동 종료는 유지하고, 풀이 완료 후 통계로 전환한다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
 ### 문제셋별 상태 (4/11 추가)
 
@@ -156,6 +160,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 2026-01-03 회의에서는 복습에서 맞고 틀림을 알기 어렵고 완료된 문제셋 확인이 불편하다는 운영 피드백이 다시 확인됐다. [2026-01-03 주간 회의록](../sources/2026-01-03-weekly-meeting.md)
 - 2026-04-19 회의에서는 등수정보/제출현황을 player 화면에 어떻게 노출할지 다시 논의됐고, 2026-04-26 회의에서는 학습모드와 복습모드 동선이 배포 후속으로 남았다. 2026-05-04 회의에서는 `몇 초 늦었습니다`, 실시간 참여 인원, 이모지, 제출 답안 목록이 후속 작업으로 더 구체화됐고, 2026-05-10 회의에서는 유형별 제출 답안 현황 UI 후보와 별도 나가기 버튼 미사용 방향이 정리됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-26 회의에서는 등수정보 노출 기준을 백엔드 실제 데이터 기반으로 재논의하기로 했다. 기본 방향은 정답률 비례와 최대 영역 40%지만, 상위 N개 안에 정답이 없는 경우와 객관식 복수정답 그룹화는 추가 명세가 필요하다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 2026-05-31 회의에서는 등수 노출 플로팅 버튼에 참여 인원 수, 닉네임, 이모지를 모으는 안이 나왔고, 실제 데이터 기반 화면 구성과 문제 유형별 기준 명세가 계속 후속으로 남았다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
 ## 관련
 
@@ -168,6 +173,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 1.4 오답 재제출 시 정답자·오답자 동시 표기 처리 정책
 - 중간 참여 player의 진입/안내/기록 보존 UX
 - 등수정보/제출현황을 정답자·오답자·미풀이자에게 어디까지 다르게 보여줄지, 제출 답안 목록의 유형별 데이터와 이모지 리액션을 어떻게 제공할지
+- 참여자 수/닉네임/이모지를 플로팅 버튼에 모을 때 선지 영역을 가리지 않는 최종 UI
 - 유형별 제출 현황에서 퍼센트/개수 텍스트 노출 기준과 작은 비율 영역 처리
 - 학습모드 완료 결과 재확인과 채점 이후 화면의 최종 동선
 - 개인 워크스페이스 학습 완료 후 복습/대시보드 진입 방식
@@ -178,3 +184,4 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 
 - [sources/2026-04-11-spec-player-view-play.md](../sources/2026-04-11-spec-player-view-play.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
+- [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)
