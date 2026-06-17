@@ -2,8 +2,8 @@
 title: 핵심 용어
 type: glossary
 status: stable
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md]
-updated: 2026-05-30
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-12-17-spec-problem-search.md, raw/2025-10-24-spec-auth-mypage.md, raw/2026-04-11-spec-play-management.md, raw/2026-04-14-spec-team-member-and-category.md, raw/2026-04-30-spec-team-member-and-category.md, raw/2026-04-11-spec-player-view-play.md, raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-02-02-weekly-meeting.md, raw/2025-02-09-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-06-14-weekly-meeting.md]
+updated: 2026-06-17
 ---
 
 # 핵심 용어
@@ -21,7 +21,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 ## 콘텐츠 단위
 
 - **문제셋 (problem set)** — 1회 풀이의 단위. 여러 질문(question)을 묶음.
-- **질문 (question)** — 문제셋 안의 단일 문항. "문제"로도 표기되나 워딩 통일은 "질문"으로 진행 중.
+- **질문 (question)** — 문제셋 안의 단일 문항. "문제"로도 표기되나 워딩 통일은 "질문"으로 진행 중. 2026-06-14 회의에서는 `문제셋을 만든다`가 정보 입력 단계와 최종 생성 단계를 모두 가리킬 수 있어, 버튼명 변경과 함께 문제/문제셋 용어 정리가 필요하다고 기록됐다.
 - **선지** — 객관식의 보기. 최소 2개, 최대 8개.
 - **답안** — 주관식·빈칸·순서의 정답.
 - **인정답안** — 표기 차이가 있어도 정답으로 인정하는 변형. 답안마다 최대 5개. 정답 영역에는 노출 안 됨.
@@ -91,6 +91,7 @@ mait 명세 전반에서 반복 사용되는 용어. 새 source가 추가되면 
 
 - **GA4** — 제품 사용 이벤트 분석 도구. 2026-04-26 회의에서는 AI 생성 시간, 로딩 UI 이탈률, 문제셋 제목 수정 클릭 수를 후보 지표로 논의했고, 2026-05-04에는 이벤트를 카테고리화해서 컴포넌트에 적용 가능한지 구분하는 일이 남았다.
 - **뷰저블** — 사용자 행동 분석 도구로 언급됨. 온보딩/GA 분석과 함께 검토 필요하며, 2026-05-10 회의에서도 디자인 파트 후속으로 남았다.
+- **어드민 페이지** — 내부 운영/지원용 페이지. 2026-06-14 회의에서는 GA나 뷰저블로 잡기 어려운 데이터, 유저 관리, FE QA 전용 API를 제공하는 방향으로 확인됐다.
 - **item-log** — 아이템별 논의 히스토리를 잃지 않기 위한 보조 레포/방식으로 2026-04-26 회의에서 언급됐다.
 
 ## 모드 토글 (3.7 주관식)

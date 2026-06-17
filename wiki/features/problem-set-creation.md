@@ -2,8 +2,8 @@
 title: 문제셋 생성 플로우
 type: feature
 status: draft
-sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
-updated: 2026-06-03
+sources: [raw/2026-04-14-spec-problem-management.md, raw/2025-10-12-weekly-meeting.md, raw/2025-10-16-weekly-meeting.md, raw/2025-10-19-weekly-meeting.md, raw/2025-10-23-weekly-meeting.md, raw/2025-11-09-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-11-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md, raw/2026-06-14-weekly-meeting.md]
+updated: 2026-06-17
 ---
 
 # 문제셋 생성 플로우
@@ -55,6 +55,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 2026-05-14 회의에서는 통일된 문제 생성 화면을 기존 `MAIT-154` 범위로 재사용하기로 했다. 주제는 제목과 통합하고, 문제 풀이 대상 필드는 보충 설명에 흡수하며, AI 생성/직접 제작/공개대상/풀이방식은 디폴트 선택 없이 직접 선택하는 방향이 논의됐다. 공개대상 직접 선택은 기존 공개범위 결정과 충돌 가능성이 있어 [공개 범위 정책](../decisions/visibility-states.md)에 별도 표시했다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 - 2026-05-26 회의에서는 `문제관리`를 `팀관리` 하위로 넣는 안이 논의됐지만, 관리자 메뉴를 모으는 장점과 팀관리 하위 개념으로 보기 어렵다는 반대 의견이 함께 남았다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 - 2026-05-31 회의에서는 디자인 파트 후속으로 `문제입력 통일 UI`가 남아 있음을 확인했고, 기존 `MAIT-141`에 회의 코멘트를 추가했다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+- 2026-06-14 회의에서는 `문제 만들기` 버튼명 자체는 큰 이슈가 없지만, 최종 생성 단계의 버튼명은 수정이 필요하다고 정리했다. `문제셋을 만든다`는 표현이 정보 입력 단계와 최종 생성 단계를 모두 가리킬 수 있어, 버튼명 변경과 함께 문제/문제셋 용어를 정리해야 한다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ### 3단계 — 질문 편집 → 생성하기
 
@@ -100,6 +101,7 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - 개인 워크스페이스 문제 생성에서 실시간 풀이 옵션을 UI에서 완전히 숨길지, 선택 불가로 둘지
 - 문제 카드 UI를 상태 기반 칸반으로 바꿀 때 카드 정보량, 더보기 액션, 문제관리 정보구조를 어디까지 함께 바꿀지
 - `문제관리`를 `팀관리` 하위로 편입할지 독립 메뉴로 유지할지
+- 최종 생성 버튼명과 `문제`, `문제셋`, `문제셋을 만든다`의 단계별 용어 통일
 
 ## 출처
 
@@ -110,3 +112,4 @@ maker가 새 문제셋을 만들고 배포하기까지의 전체 흐름. 3단계
 - [sources/2026-05-14-weekly-meeting.md](../sources/2026-05-14-weekly-meeting.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
 - [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)
+- [sources/2026-06-14-weekly-meeting.md](../sources/2026-06-14-weekly-meeting.md)

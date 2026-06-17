@@ -2,8 +2,8 @@
 title: 문제 풀기 (player 측)
 type: feature
 status: draft
-sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
-updated: 2026-06-03
+sources: [raw/2026-04-11-spec-player-view-play.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-07-weekly-meeting.md, raw/2025-12-10-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-29-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-01-03-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md, raw/2026-06-14-weekly-meeting.md]
+updated: 2026-06-17
 ---
 
 # 문제 풀기 (player 측)
@@ -63,6 +63,8 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 2026-05-14 회의에서는 유형별 제출 현황 구조가 피그마에서 확정됐지만, 퍼센트 바가 90:10처럼 작게 나뉘는 경우 10% 영역에 텍스트를 넣기 어렵다는 문제가 남았다. 퍼센트와 개수 노출 기준은 기획/디자인이 추가로 정해야 한다. 같은 회의에서 `MAIT-148`의 다음 작업으로 제출한 유저와 몇 초 차이나는지, 실시간 참여 인원 카운트 UI가 다시 확인됐다. [2026-05-14 주간 회의록](../sources/2026-05-14-weekly-meeting.md)
 
 2026-05-31 회의에서는 참여자 수가 계속 떠 있는 전제에서 문제 영역과 겹치는 문제가 다시 확인됐다. 대안으로 플로팅 버튼을 두고 참여 인원 수, 참여자 닉네임, 이모지를 함께 노출하는 방향이 논의됐으며, 버튼명에 숫자를 넣거나 사람 아이콘을 쓰는 안도 언급됐다. 텍스트와 숫자 조합은 영역이 커져 선지를 가릴 수 있다는 우려가 남았다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+
+2026-06-14 회의에서는 시간 차이 노출과 참여자 수 노출이 프론트 완료로 체크됐지만, 실제 데이터 기반 등수 노출 화면 구성과 문제 유형별 기준 명세는 기획/디자인 후속으로 남았다. `MAIT-148`은 1차 동선, `MAIT-149`는 정답자/제출 답안 목록과 후속 노출 정책 범위로 재사용한다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ## 2. 학습 모드
 
@@ -161,6 +163,7 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - 2026-04-19 회의에서는 등수정보/제출현황을 player 화면에 어떻게 노출할지 다시 논의됐고, 2026-04-26 회의에서는 학습모드와 복습모드 동선이 배포 후속으로 남았다. 2026-05-04 회의에서는 `몇 초 늦었습니다`, 실시간 참여 인원, 이모지, 제출 답안 목록이 후속 작업으로 더 구체화됐고, 2026-05-10 회의에서는 유형별 제출 답안 현황 UI 후보와 별도 나가기 버튼 미사용 방향이 정리됐다. [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-26 회의에서는 등수정보 노출 기준을 백엔드 실제 데이터 기반으로 재논의하기로 했다. 기본 방향은 정답률 비례와 최대 영역 40%지만, 상위 N개 안에 정답이 없는 경우와 객관식 복수정답 그룹화는 추가 명세가 필요하다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 - 2026-05-31 회의에서는 등수 노출 플로팅 버튼에 참여 인원 수, 닉네임, 이모지를 모으는 안이 나왔고, 실제 데이터 기반 화면 구성과 문제 유형별 기준 명세가 계속 후속으로 남았다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+- 2026-06-14 회의에서는 시간 차이/참여자 수는 완료 체크됐지만, 실제 데이터 기반 등수 화면과 유형별 기준 명세는 여전히 남은 기획 후속으로 확인됐다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ## 관련
 
@@ -185,3 +188,4 @@ maker가 [진출자 선정](./winner-selection.md)을 한 경우의 화면.
 - [sources/2026-04-11-spec-player-view-play.md](../sources/2026-04-11-spec-player-view-play.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
 - [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)
+- [sources/2026-06-14-weekly-meeting.md](../sources/2026-06-14-weekly-meeting.md)

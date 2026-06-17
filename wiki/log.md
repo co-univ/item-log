@@ -365,3 +365,21 @@ Confluence 5개 페이지 일괄 ingest:
 - 주요 반영: 학습모드 우승자 미노출, 사용자가 풀지 않은 문제셋의 대시보드 표시 방식, 득점자 우선 정답 통계 기준, 개인 워크스페이스 자동 종료/통계 전환, 카테고리 영역 단일화, 실시간 등수 플로팅 버튼 논의, 온보딩/문제입력 UI 후속
 - Jira 신규 생성 없이 기존 `MAIT-147`, `MAIT-149`, `MAIT-155`, `MAIT-85`, `MAIT-141`, `MAIT-157`, `MAIT-106`에 회의 후속 코멘트 추가
 - 주의: Notion 상태 속성은 아직 `예정`으로 남아 있으나, 사용자가 직접 링크를 지정해 현재 본문 기준으로 ingest
+
+## [2026-06-17] ingest | 2026-06-14-weekly-meeting
+
+- Notion 페이지 `37987d59-2b6e-8000-8f8d-da03dd0e60e3`를 `raw/2026-06-14-weekly-meeting.md`로 스냅샷 저장 후 wiki에 반영
+- 신규 페이지:
+  - sources/2026-06-14-weekly-meeting.md
+- 기존 페이지 갱신:
+  - features/result-dashboard.md
+  - features/problem-set-creation.md
+  - features/play-player.md
+  - features/product-analytics.md
+  - features/user-notifications.md
+  - features/team-exit-and-deletion.md
+  - glossary/core-terms.md
+  - index.md
+- 주요 반영: 6/16 배포 점검, 6/19 코테이토 사용 전 기능 명세 공유, 문제셋 생성 버튼명/용어 정리 필요, 대시보드 정렬/태그/유형별 답안 기준, 득점자 정답 처리 로직, 실제 데이터 기반 등수정보, 어드민 내부 데이터/QA API, 알림 초안과 팀 삭제 후속
+- Jira 신규 생성 없음. Notion 티켓 정리에는 기존 `MAIT-64`, `MAIT-82`, `MAIT-126`, `MAIT-141`, `MAIT-143`, `MAIT-147`, `MAIT-148`, `MAIT-149`, `MAIT-154` 재사용으로 기록
+- 주의: Jira 회의 후속 댓글 작성은 Atlassian 인증 오류로 완료하지 못했으므로, wiki에는 Notion 기록과 중복 검사 결과만 반영

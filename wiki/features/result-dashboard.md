@@ -2,8 +2,8 @@
 title: 풀이결과 대시보드
 type: feature
 status: draft
-sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md]
-updated: 2026-06-03
+sources: [raw/2026-01-28-spec-result-dashboard.md, raw/2026-05-26-spec-result-dashboard.md, raw/2025-10-30-weekly-meeting.md, raw/2025-11-02-weekly-meeting.md, raw/2025-11-12-weekly-meeting.md, raw/2025-11-16-weekly-meeting.md, raw/2025-12-02-weekly-meeting.md, raw/2025-12-23-weekly-meeting.md, raw/2026-03-22-weekly-meeting.md, raw/2026-02-22-weekly-meeting.md, raw/2026-01-25-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-10-spec-personal-workspace.md, raw/2026-05-14-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-05-31-weekly-meeting.md, raw/2026-06-14-weekly-meeting.md]
+updated: 2026-06-17
 ---
 
 # 풀이결과 대시보드
@@ -54,6 +54,7 @@ updated: 2026-06-03
 - 카테고리별 정답률을 바그래프
 - **상위 8개**만 default 노출, 나머지는 "더보기" 토글
 - 2026-05-26 Confluence v7 명세도 카테고리를 `문제셋의 주제 태그`로 설명하므로, 2026-05-14 회의의 주제/카테고리 분리 논의와 여전히 정합성 확인이 필요하다. [2026-05-26 풀이결과 대시보드 명세서](../sources/2026-05-26-spec-result-dashboard.md)
+- 2026-06-14 회의에서는 더보기 후 다시 접는 동작이 필요하다는 의견이 나왔고, 접는 버튼 이름으로 `접기`가 언급됐다. 날짜/정답률 정렬 기능은 어떤 기준으로 정렬되어 있는지 화면 정의가 필요하며, `실시간`/`학습` 태그가 현재 들어가지 않은 상태도 확인됐다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ### 1.4 문제셋 카드 (상세 진입점)
 
@@ -67,6 +68,8 @@ updated: 2026-06-03
 
 2026-05-31 회의에서는 학습모드 문제셋에 우승자 영역이 없으므로 우승자 정보를 노출하지 않는 방향으로 정리했다. 문제셋 목록은 풀이 완료된 문제셋 범위에서 사용자가 직접 풀지 않은 문제셋도 포함한다. 사용자가 풀지 않은 문제셋은 `내 정답률: - / 전체 평균 정답률`로 보이고, 우리팀 랭킹과 오답률 Top3는 그대로 노출하며, 점수는 0점이고 전부 틀린 문제로 반영한다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
 
+2026-06-14 회의에서는 제목이 길어서 짤리는 문제가 언급됐고, `자세히보기` 영역을 줄이고 태그 영역을 늘리는 안이 나왔다. 풀이 기록이 없는 경우의 표시도 추가 확인 항목으로 남았다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
+
 ## 2. 상세 대시보드
 
 ### 2.1 우리팀 랭킹 (해당 문제셋)
@@ -77,6 +80,8 @@ updated: 2026-06-03
 | 학습 | 정답수 |
 
 정답 통계 기준은 실시간 풀이 중 사용자가 인지한 득점 결과와 대시보드 통계가 어긋나지 않도록 조정됐다. 2026-05-31 회의 기준으로 득점자라면 n번째 제출이어도 정답으로 카운트하고, 득점자가 아닌 경우에는 최초 제출 기록 기준으로 정답/오답을 처리한다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+
+2026-06-14 회의에서는 백엔드 후속으로 `득점자도 정답자에 포함시키는 로직 변경`이 다시 남았다. 이 항목은 위 정답 통계 기준을 구현에 반영하는 후속으로 본다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ### 2.2 오답률 top3
 
@@ -114,6 +119,7 @@ updated: 2026-06-03
 - 2026-05-26 주간 회의에서는 player가 풀이를 완료했지만 모든 팀원이 풀지 않았거나 관리자가 학습모드 문제셋을 종료하지 않은 상태여도 상세 대시보드를 볼 수 있다고 정리했다. 이때 오답률만 실시간으로 업데이트되며, 실시간/학습모드 player의 `풀이 완료` 상태에는 `통계확인` 버튼을 추가해야 한다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 - 같은 회의에서 풀이결과 대시보드 2차 범위는 기존 `MAIT-147`에 연결했고, 오답률 산식/본인 기준 카테고리별 정답률/본인 문제셋별 풀이기록/문제셋별 오답률을 함께 확인했다. 종료된 문제셋의 maker/player별 정보 노출 정책은 신규 `MAIT-156`으로 분리됐다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
 - 2026-05-31 회의에서는 학습모드 우승자 미노출, 사용자가 풀지 않은 완료 문제셋의 대시보드 표시 방식, 정답 통계 기준을 기존 `MAIT-147`에 코멘트로 연결했다. [2026-05-31 주간 회의록](../sources/2026-05-31-weekly-meeting.md)
+- 2026-06-14 회의에서는 대시보드 2차 범위에서 정렬 기준, 실시간/학습 태그, 유형별 답안 영역 노출 기준, 풀이 기록 없음 상태, 득점자 정답 처리 로직이 후속으로 다시 확인됐다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ## 관련
 
@@ -139,3 +145,4 @@ updated: 2026-06-03
 - [sources/2026-05-26-spec-result-dashboard.md](../sources/2026-05-26-spec-result-dashboard.md)
 - [sources/2026-05-26-weekly-meeting.md](../sources/2026-05-26-weekly-meeting.md)
 - [sources/2026-05-31-weekly-meeting.md](../sources/2026-05-31-weekly-meeting.md)
+- [sources/2026-06-14-weekly-meeting.md](../sources/2026-06-14-weekly-meeting.md)

@@ -2,8 +2,8 @@
 title: 팀 탈퇴 / 팀 삭제
 type: feature
 status: draft
-sources: [raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md]
-updated: 2026-05-30
+sources: [raw/2026-03-29-weekly-meeting.md, raw/2026-04-19-weekly-meeting.md, raw/2026-04-26-weekly-meeting.md, raw/2026-05-04-weekly-meeting.md, raw/2026-05-10-weekly-meeting.md, raw/2026-05-26-weekly-meeting.md, raw/2026-06-14-weekly-meeting.md]
+updated: 2026-06-17
 ---
 
 # 팀 탈퇴 / 팀 삭제
@@ -37,8 +37,9 @@ updated: 2026-05-30
 - 2026-05-04 회의에서는 `삭제한 팀 하위 데이터 접근 차단`이 백엔드 작업 항목으로 다시 올라왔다. owner가 팀을 삭제한 경우 maker/player에게는 이동 없는 알림을 보내는 방향이다.
 - 2026-05-10 회의에서도 `팀삭제 데이터 보정 작업`이 백엔드 후속으로 남았고, 기존 `MAIT-82`에서 이어가기로 했다.
 - 2026-05-26 회의에서도 팀 삭제 백필이 백엔드 후속으로 다시 확인됐고, 기존 `MAIT-82`에 회의 후속을 연결했다.
+- 2026-06-14 회의에서도 7월 1일 배포/후속 범위의 백엔드 할 일로 `팀삭제`가 다시 남았고, 신규 티켓 없이 기존 `MAIT-82`에서 이어가는 것으로 기록됐다.
 
-근거: [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md), [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md).
+근거: [2026-04-19 주간 회의록](../sources/2026-04-19-weekly-meeting.md), [2026-04-26 주간 회의록](../sources/2026-04-26-weekly-meeting.md), [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md), [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md), [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md), [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md).
 
 ## 배포 후 확인 항목
 
@@ -55,6 +56,7 @@ updated: 2026-05-30
 - 2026-05-04 회의에서는 팀 탈퇴/삭제 알림의 수신자와 클릭 후 이동 여부, 삭제한 팀 하위 데이터 접근 차단 작업이 추가로 정리됐다. [2026-05-04 주간 회의록](../sources/2026-05-04-weekly-meeting.md)
 - 2026-05-10 회의에서는 팀삭제 데이터 보정 작업이 기존 Jira에서 계속 추적되는 후속으로 남았다. [2026-05-10 주간 회의록](../sources/2026-05-10-weekly-meeting.md)
 - 2026-05-26 회의에서는 팀 삭제 백필이 다시 백엔드 할 일로 올라왔고, `MAIT-82`를 계속 재사용하기로 했다. [2026-05-26 주간 회의록](../sources/2026-05-26-weekly-meeting.md)
+- 2026-06-14 회의에서도 팀 삭제가 백엔드 후속으로 다시 확인됐고, `MAIT-82`를 계속 재사용하기로 했다. [2026-06-14 주간 회의록](../sources/2026-06-14-weekly-meeting.md)
 
 ## 관련
 
