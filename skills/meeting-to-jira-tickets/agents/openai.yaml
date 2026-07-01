@@ -1,0 +1,7 @@
+interface:
+  display_name: "Meeting to Jira Tickets"
+  short_description: "Turn MAIT notes into Jira tickets"
+  default_prompt: "Use $meeting-to-jira-tickets to classify this MAIT meeting note into Jira-ready ticket actions."
+
+policy:
+  allow_implicit_invocation: true
