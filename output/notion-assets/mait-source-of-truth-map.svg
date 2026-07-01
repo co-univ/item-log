@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">MAIT source of truth 맵</title>
+  <desc id="desc">MAIT 팀에서 각 도구가 담당해야 하는 정보와 중심 허브인 MAIT-PM 이슈의 역할</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 800 42px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 20px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #475569; }
+      .hub { fill: #0f172a; }
+      .hub-title { font: 800 30px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #ffffff; }
+      .hub-sub { font: 600 17px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #cbd5e1; }
+      .box-title { font: 800 24px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #0f172a; }
+      .box-line { font: 600 17px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #334155; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; }
+      .notion { fill: #dbeafe; }
+      .conf { fill: #dcfce7; }
+      .figma { fill: #fef3c7; }
+      .edu { fill: #ede9fe; }
+      .mis { fill: #fce7f3; }
+      .log { fill: #e0f2fe; }
+      .line { stroke: #94a3b8; stroke-width: 4; stroke-linecap: round; }
+      .rule { font: 800 22px "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif; fill: #0f172a; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+  <text class="title" x="64" y="76">도구별 Source of Truth 맵</text>
+  <text class="subtitle" x="64" y="110">모든 도구가 중요하지만, 제품 아이템의 현재 상태는 MAIT-PM 이슈에서 모아본다.</text>
+
+  <line class="line" x1="462" y1="276" x2="700" y2="410"/>
+  <line class="line" x1="800" y1="266" x2="800" y2="386"/>
+  <line class="line" x1="1138" y1="276" x2="900" y2="410"/>
+  <line class="line" x1="462" y1="596" x2="700" y2="490"/>
+  <line class="line" x1="800" y1="626" x2="800" y2="514"/>
+  <line class="line" x1="1138" y1="596" x2="900" y2="490"/>
+
+  <g transform="translate(640 360)">
+    <rect class="hub" x="0" y="0" width="320" height="180" rx="24"/>
+    <text class="hub-title" x="42" y="58">MAIT-PM 이슈</text>
+    <text class="hub-sub" x="42" y="94">제품 아이템의 현재 상태</text>
+    <text class="hub-sub" x="42" y="124">목표 배포 / 담당자 / 링크</text>
+    <text class="hub-sub" x="42" y="154">기획-디자인-개발-QA 연결</text>
+  </g>
+
+  <g transform="translate(120 190)">
+    <rect class="box notion" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">Notion</text>
+    <text class="box-line" x="28" y="82">회의록 / 회고</text>
+    <text class="box-line" x="28" y="112">결정 배경</text>
+    <text class="box-line" x="28" y="142">운영 원칙</text>
+  </g>
+
+  <g transform="translate(620 150)">
+    <rect class="box conf" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">Confluence</text>
+    <text class="box-line" x="28" y="82">최신 기능명세서</text>
+    <text class="box-line" x="28" y="112">정책 / 예외 케이스</text>
+    <text class="box-line" x="28" y="142">acceptance criteria</text>
+  </g>
+
+  <g transform="translate(1120 190)">
+    <rect class="box figma" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">Figma</text>
+    <text class="box-line" x="28" y="82">최신 디자인</text>
+    <text class="box-line" x="28" y="112">화면 상태</text>
+    <text class="box-line" x="28" y="142">반응형 기준</text>
+  </g>
+
+  <g transform="translate(120 570)">
+    <rect class="box edu" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">Jira EDU</text>
+    <text class="box-line" x="28" y="82">실제 개발 티켓</text>
+    <text class="box-line" x="28" y="112">하위 작업</text>
+    <text class="box-line" x="28" y="142">PR / 리뷰 상태</text>
+  </g>
+
+  <g transform="translate(620 610)">
+    <rect class="box mis" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">Jira MIS</text>
+    <text class="box-line" x="28" y="82">QA / 운영 이슈 inbox</text>
+    <text class="box-line" x="28" y="112">쓸 거면 명확히</text>
+    <text class="box-line" x="28" y="142">아니면 폐기</text>
+  </g>
+
+  <g transform="translate(1120 570)">
+    <rect class="box log" x="0" y="0" width="360" height="180" rx="20"/>
+    <text class="box-title" x="28" y="45">item-log</text>
+    <text class="box-line" x="28" y="82">회의 / 문의 / 결정 큐레이션</text>
+    <text class="box-line" x="28" y="112">최종 결정 검색</text>
+    <text class="box-line" x="28" y="142">지식 베이스</text>
+  </g>
+
+  <rect x="64" y="824" width="1472" height="44" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text class="rule" x="92" y="854">원칙: 제품 아이템의 진행 상태는 MAIT-PM에서 보고, 세부 산출물은 각 전문 도구로 연결한다.</text>
+</svg>
