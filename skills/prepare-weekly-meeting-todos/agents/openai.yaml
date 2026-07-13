@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare Weekly Meeting Todos"
+  short_description: "Prepare MAIT meeting todos from Notion and Jira"
+  default_prompt: "Use $prepare-weekly-meeting-todos to organize next meeting todos by part from last week’s Notion minutes and MAIT Jira context."
