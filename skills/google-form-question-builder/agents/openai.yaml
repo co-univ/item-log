@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Form 질문 만들기"
+  short_description: "질문 소스를 폼으로 만들고 관련 화면까지 캡처·삽입"
+  default_prompt: "$google-form-question-builder로 질문 소스를 Google Form에 반영하고 관련 화면을 캡처해 삽입해 주세요."
